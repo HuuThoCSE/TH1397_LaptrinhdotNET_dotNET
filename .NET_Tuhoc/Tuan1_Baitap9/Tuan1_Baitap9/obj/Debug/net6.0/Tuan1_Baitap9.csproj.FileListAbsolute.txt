@@ -1,0 +1,15 @@
+D:\Github\.NET\Tuan1_Baitap9\Tuan1_Baitap9\obj\Debug\net6.0\Tuan1_Baitap9.csproj.AssemblyReference.cache
+D:\Github\.NET\Tuan1_Baitap9\Tuan1_Baitap9\obj\Debug\net6.0\Tuan1_Baitap9.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\.NET\Tuan1_Baitap9\Tuan1_Baitap9\obj\Debug\net6.0\Tuan1_Baitap9.AssemblyInfoInputs.cache
+D:\Github\.NET\Tuan1_Baitap9\Tuan1_Baitap9\obj\Debug\net6.0\Tuan1_Baitap9.AssemblyInfo.cs
+D:\Github\.NET\Tuan1_Baitap9\Tuan1_Baitap9\obj\Debug\net6.0\Tuan1_Baitap9.csproj.CoreCompileInputs.cache
+D:\Github\.NET\Tuan1_Baitap9\Tuan1_Baitap9\bin\Debug\net6.0\Tuan1_Baitap9.exe
+D:\Github\.NET\Tuan1_Baitap9\Tuan1_Baitap9\bin\Debug\net6.0\Tuan1_Baitap9.deps.json
+D:\Github\.NET\Tuan1_Baitap9\Tuan1_Baitap9\bin\Debug\net6.0\Tuan1_Baitap9.runtimeconfig.json
+D:\Github\.NET\Tuan1_Baitap9\Tuan1_Baitap9\bin\Debug\net6.0\Tuan1_Baitap9.dll
+D:\Github\.NET\Tuan1_Baitap9\Tuan1_Baitap9\bin\Debug\net6.0\Tuan1_Baitap9.pdb
+D:\Github\.NET\Tuan1_Baitap9\Tuan1_Baitap9\obj\Debug\net6.0\Tuan1_Baitap9.dll
+D:\Github\.NET\Tuan1_Baitap9\Tuan1_Baitap9\obj\Debug\net6.0\refint\Tuan1_Baitap9.dll
+D:\Github\.NET\Tuan1_Baitap9\Tuan1_Baitap9\obj\Debug\net6.0\Tuan1_Baitap9.pdb
+D:\Github\.NET\Tuan1_Baitap9\Tuan1_Baitap9\obj\Debug\net6.0\Tuan1_Baitap9.genruntimeconfig.cache
+D:\Github\.NET\Tuan1_Baitap9\Tuan1_Baitap9\obj\Debug\net6.0\ref\Tuan1_Baitap9.dll
