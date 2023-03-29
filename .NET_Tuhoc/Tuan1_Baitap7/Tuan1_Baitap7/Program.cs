@@ -21,6 +21,9 @@ switch (toantu)
         Console.WriteLine("{0} * {1} = {2}", a, b, a * b);
         break;
     case '/':
-        Console.WriteLine("{0} / {1} = {2}", a, b, a / b);
+        if(b != 0)
+            Console.WriteLine("{0} / {1} = {2}", a, b, a / b);
+        else
+            Console.WriteLine("Giá trị lỗi! b không được bằng 0.");
         break;
 }
