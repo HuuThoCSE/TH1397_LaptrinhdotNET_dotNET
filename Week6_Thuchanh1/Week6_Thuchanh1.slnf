@@ -1,0 +1,19 @@
+{
+  "solution": {
+    "path": "Week6_Thuchanh1_Baitap2\\Week6_Thuchanh1_Baitap2.sln",
+    "projects": [
+      "..\\Week6_Thuchanh1_Baitap10\\Week6_Thuchanh1_Baitap10.csproj",
+      "..\\Week6_Thuchanh1_Baitap11\\Week6_Thuchanh1_Baitap11.csproj",
+      "..\\Week6_Thuchanh1_Baitap12\\Week6_Thuchanh1_Baitap12.csproj",
+      "..\\Week6_Thuchanh1_Baitap1\\Week6_Thuchanh1_Baitap1\\Week6_Thuchanh1_Baitap1.csproj",
+      "..\\Week6_Thuchanh1_Baitap3\\Week6_Thuchanh1_Baitap3.csproj",
+      "..\\Week6_Thuchanh1_Baitap4\\Week6_Thuchanh1_Baitap4.csproj",
+      "..\\Week6_Thuchanh1_Baitap5\\Week6_Thuchanh1_Baitap5.csproj",
+      "..\\Week6_Thuchanh1_Baitap6\\Week6_Thuchanh1_Baitap6.csproj",
+      "..\\Week6_Thuchanh1_Baitap7\\Week6_Thuchanh1_Baitap7.csproj",
+      "..\\Week6_Thuchanh1_Baitap8\\Week6_Thuchanh1_Baitap8.csproj",
+      "..\\Week6_Thuchanh1_Baitap9\\Week6_Thuchanh1_Baitap9.csproj",
+      "Week6_Thuchanh1_Baitap2\\Week6_Thuchanh1_Baitap2.csproj"
+    ]
+  }
+}
