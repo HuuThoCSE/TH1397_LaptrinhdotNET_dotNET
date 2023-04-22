@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Week6_Thuchanh1_Baitap3/1.0.0": {
+        "runtime": {
+          "Week6_Thuchanh1_Baitap3.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Week6_Thuchanh1_Baitap3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

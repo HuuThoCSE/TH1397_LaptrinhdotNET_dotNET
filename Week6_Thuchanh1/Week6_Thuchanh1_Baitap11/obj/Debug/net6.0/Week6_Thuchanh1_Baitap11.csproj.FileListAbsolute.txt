@@ -1,0 +1,15 @@
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\Week6_Thuchanh1\Week6_Thuchanh1_Baitap11\bin\Debug\net6.0\Week6_Thuchanh1_Baitap11.exe
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\Week6_Thuchanh1\Week6_Thuchanh1_Baitap11\bin\Debug\net6.0\Week6_Thuchanh1_Baitap11.deps.json
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\Week6_Thuchanh1\Week6_Thuchanh1_Baitap11\bin\Debug\net6.0\Week6_Thuchanh1_Baitap11.runtimeconfig.json
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\Week6_Thuchanh1\Week6_Thuchanh1_Baitap11\bin\Debug\net6.0\Week6_Thuchanh1_Baitap11.dll
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\Week6_Thuchanh1\Week6_Thuchanh1_Baitap11\bin\Debug\net6.0\Week6_Thuchanh1_Baitap11.pdb
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\Week6_Thuchanh1\Week6_Thuchanh1_Baitap11\obj\Debug\net6.0\Week6_Thuchanh1_Baitap11.csproj.AssemblyReference.cache
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\Week6_Thuchanh1\Week6_Thuchanh1_Baitap11\obj\Debug\net6.0\Week6_Thuchanh1_Baitap11.GeneratedMSBuildEditorConfig.editorconfig
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\Week6_Thuchanh1\Week6_Thuchanh1_Baitap11\obj\Debug\net6.0\Week6_Thuchanh1_Baitap11.AssemblyInfoInputs.cache
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\Week6_Thuchanh1\Week6_Thuchanh1_Baitap11\obj\Debug\net6.0\Week6_Thuchanh1_Baitap11.AssemblyInfo.cs
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\Week6_Thuchanh1\Week6_Thuchanh1_Baitap11\obj\Debug\net6.0\Week6_Thuchanh1_Baitap11.csproj.CoreCompileInputs.cache
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\Week6_Thuchanh1\Week6_Thuchanh1_Baitap11\obj\Debug\net6.0\Week6_Thuchanh1_Baitap11.dll
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\Week6_Thuchanh1\Week6_Thuchanh1_Baitap11\obj\Debug\net6.0\refint\Week6_Thuchanh1_Baitap11.dll
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\Week6_Thuchanh1\Week6_Thuchanh1_Baitap11\obj\Debug\net6.0\Week6_Thuchanh1_Baitap11.pdb
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\Week6_Thuchanh1\Week6_Thuchanh1_Baitap11\obj\Debug\net6.0\Week6_Thuchanh1_Baitap11.genruntimeconfig.cache
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\Week6_Thuchanh1\Week6_Thuchanh1_Baitap11\obj\Debug\net6.0\ref\Week6_Thuchanh1_Baitap11.dll

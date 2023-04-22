@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\.NET\\Tuan1_Baitap8\\Tuan1_Baitap8\\Tuan1_Baitap8.csproj": {}
+    "D:\\21022008_NguyenHuuTho\\huuthocs\\TH1397_Laptrinh.NET_.NET\\.NET_Tuhoc\\Tuan1_Baitap8\\Tuan1_Baitap8\\Tuan1_Baitap8.csproj": {}
   },
   "projects": {
-    "D:\\Github\\.NET\\Tuan1_Baitap8\\Tuan1_Baitap8\\Tuan1_Baitap8.csproj": {
+    "D:\\21022008_NguyenHuuTho\\huuthocs\\TH1397_Laptrinh.NET_.NET\\.NET_Tuhoc\\Tuan1_Baitap8\\Tuan1_Baitap8\\Tuan1_Baitap8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\.NET\\Tuan1_Baitap8\\Tuan1_Baitap8\\Tuan1_Baitap8.csproj",
+        "projectUniqueName": "D:\\21022008_NguyenHuuTho\\huuthocs\\TH1397_Laptrinh.NET_.NET\\.NET_Tuhoc\\Tuan1_Baitap8\\Tuan1_Baitap8\\Tuan1_Baitap8.csproj",
         "projectName": "Tuan1_Baitap8",
-        "projectPath": "D:\\Github\\.NET\\Tuan1_Baitap8\\Tuan1_Baitap8\\Tuan1_Baitap8.csproj",
-        "packagesPath": "C:\\Users\\huuth\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\.NET\\Tuan1_Baitap8\\Tuan1_Baitap8\\obj\\",
+        "projectPath": "D:\\21022008_NguyenHuuTho\\huuthocs\\TH1397_Laptrinh.NET_.NET\\.NET_Tuhoc\\Tuan1_Baitap8\\Tuan1_Baitap8\\Tuan1_Baitap8.csproj",
+        "packagesPath": "C:\\Users\\SINHVIEN\\.nuget\\packages\\",
+        "outputPath": "D:\\21022008_NguyenHuuTho\\huuthocs\\TH1397_Laptrinh.NET_.NET\\.NET_Tuhoc\\Tuan1_Baitap8\\Tuan1_Baitap8\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\huuth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SINHVIEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
