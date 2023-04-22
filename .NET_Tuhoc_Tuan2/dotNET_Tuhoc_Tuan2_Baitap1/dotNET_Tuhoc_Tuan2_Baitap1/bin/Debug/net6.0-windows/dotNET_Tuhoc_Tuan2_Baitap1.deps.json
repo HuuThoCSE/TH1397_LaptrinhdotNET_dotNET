@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "dotNET_Tuhoc_Tuan2_Baitap1/1.0.0": {
+        "runtime": {
+          "dotNET_Tuhoc_Tuan2_Baitap1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "dotNET_Tuhoc_Tuan2_Baitap1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

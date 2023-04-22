@@ -1,0 +1,17 @@
+is_global = true
+build_property.ApplicationManifest = 
+build_property.StartupObject = 
+build_property.ApplicationDefaultFont = 
+build_property.ApplicationHighDpiMode = 
+build_property.ApplicationUseCompatibleTextRendering = 
+build_property.ApplicationVisualStyles = 
+build_property.TargetFramework = net6.0-windows
+build_property.TargetPlatformMinVersion = 7.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = dotNET_Tuhoc_Tuan2_Baitap2
+build_property.ProjectDir = D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\.NET_Tuhoc_Tuan2\dotNET_Tuhoc_Tuan2_Baitap2\dotNET_Tuhoc_Tuan2_Baitap2\

@@ -1,0 +1,17 @@
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\.NET_Tuhoc_Tuan2\dotNET_Tuhoc_Tuan2_Baitap1\dotNET_Tuhoc_Tuan2_Baitap1\bin\Debug\net6.0-windows\dotNET_Tuhoc_Tuan2_Baitap1.exe
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\.NET_Tuhoc_Tuan2\dotNET_Tuhoc_Tuan2_Baitap1\dotNET_Tuhoc_Tuan2_Baitap1\bin\Debug\net6.0-windows\dotNET_Tuhoc_Tuan2_Baitap1.deps.json
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\.NET_Tuhoc_Tuan2\dotNET_Tuhoc_Tuan2_Baitap1\dotNET_Tuhoc_Tuan2_Baitap1\bin\Debug\net6.0-windows\dotNET_Tuhoc_Tuan2_Baitap1.runtimeconfig.json
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\.NET_Tuhoc_Tuan2\dotNET_Tuhoc_Tuan2_Baitap1\dotNET_Tuhoc_Tuan2_Baitap1\bin\Debug\net6.0-windows\dotNET_Tuhoc_Tuan2_Baitap1.dll
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\.NET_Tuhoc_Tuan2\dotNET_Tuhoc_Tuan2_Baitap1\dotNET_Tuhoc_Tuan2_Baitap1\bin\Debug\net6.0-windows\dotNET_Tuhoc_Tuan2_Baitap1.pdb
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\.NET_Tuhoc_Tuan2\dotNET_Tuhoc_Tuan2_Baitap1\dotNET_Tuhoc_Tuan2_Baitap1\obj\Debug\net6.0-windows\dotNET_Tuhoc_Tuan2_Baitap1.csproj.AssemblyReference.cache
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\.NET_Tuhoc_Tuan2\dotNET_Tuhoc_Tuan2_Baitap1\dotNET_Tuhoc_Tuan2_Baitap1\obj\Debug\net6.0-windows\dotNET_Tuhoc_Tuan2_Baitap1.Form1.resources
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\.NET_Tuhoc_Tuan2\dotNET_Tuhoc_Tuan2_Baitap1\dotNET_Tuhoc_Tuan2_Baitap1\obj\Debug\net6.0-windows\dotNET_Tuhoc_Tuan2_Baitap1.csproj.GenerateResource.cache
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\.NET_Tuhoc_Tuan2\dotNET_Tuhoc_Tuan2_Baitap1\dotNET_Tuhoc_Tuan2_Baitap1\obj\Debug\net6.0-windows\dotNET_Tuhoc_Tuan2_Baitap1.GeneratedMSBuildEditorConfig.editorconfig
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\.NET_Tuhoc_Tuan2\dotNET_Tuhoc_Tuan2_Baitap1\dotNET_Tuhoc_Tuan2_Baitap1\obj\Debug\net6.0-windows\dotNET_Tuhoc_Tuan2_Baitap1.AssemblyInfoInputs.cache
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\.NET_Tuhoc_Tuan2\dotNET_Tuhoc_Tuan2_Baitap1\dotNET_Tuhoc_Tuan2_Baitap1\obj\Debug\net6.0-windows\dotNET_Tuhoc_Tuan2_Baitap1.AssemblyInfo.cs
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\.NET_Tuhoc_Tuan2\dotNET_Tuhoc_Tuan2_Baitap1\dotNET_Tuhoc_Tuan2_Baitap1\obj\Debug\net6.0-windows\dotNET_Tuhoc_Tuan2_Baitap1.csproj.CoreCompileInputs.cache
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\.NET_Tuhoc_Tuan2\dotNET_Tuhoc_Tuan2_Baitap1\dotNET_Tuhoc_Tuan2_Baitap1\obj\Debug\net6.0-windows\dotNET_Tuhoc_Tuan2_Baitap1.dll
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\.NET_Tuhoc_Tuan2\dotNET_Tuhoc_Tuan2_Baitap1\dotNET_Tuhoc_Tuan2_Baitap1\obj\Debug\net6.0-windows\refint\dotNET_Tuhoc_Tuan2_Baitap1.dll
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\.NET_Tuhoc_Tuan2\dotNET_Tuhoc_Tuan2_Baitap1\dotNET_Tuhoc_Tuan2_Baitap1\obj\Debug\net6.0-windows\dotNET_Tuhoc_Tuan2_Baitap1.pdb
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\.NET_Tuhoc_Tuan2\dotNET_Tuhoc_Tuan2_Baitap1\dotNET_Tuhoc_Tuan2_Baitap1\obj\Debug\net6.0-windows\dotNET_Tuhoc_Tuan2_Baitap1.genruntimeconfig.cache
+D:\21022008_NguyenHuuTho\huuthocs\TH1397_Laptrinh.NET_.NET\.NET_Tuhoc_Tuan2\dotNET_Tuhoc_Tuan2_Baitap1\dotNET_Tuhoc_Tuan2_Baitap1\obj\Debug\net6.0-windows\ref\dotNET_Tuhoc_Tuan2_Baitap1.dll
