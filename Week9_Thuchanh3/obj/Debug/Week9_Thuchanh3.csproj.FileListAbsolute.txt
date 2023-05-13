@@ -1,0 +1,13 @@
+D:\Github\TH1397_Laptrinh.NET_.NET\Week9_Thuchanh3\Week9_Thuchanh3\obj\Debug\Week9_Thuchanh3.csproj.AssemblyReference.cache
+D:\Github\TH1397_Laptrinh.NET_.NET\Week9_Thuchanh3\Week9_Thuchanh3\obj\Debug\Week9_Thuchanh3.csproj.SuggestedBindingRedirects.cache
+D:\Github\TH1397_Laptrinh.NET_.NET\Week9_Thuchanh3\Week9_Thuchanh3\obj\Debug\Week9_Thuchanh3.Form1.resources
+D:\Github\TH1397_Laptrinh.NET_.NET\Week9_Thuchanh3\Week9_Thuchanh3\obj\Debug\Week9_Thuchanh3.Properties.Resources.resources
+D:\Github\TH1397_Laptrinh.NET_.NET\Week9_Thuchanh3\Week9_Thuchanh3\obj\Debug\Week9_Thuchanh3.csproj.GenerateResource.cache
+D:\Github\TH1397_Laptrinh.NET_.NET\Week9_Thuchanh3\Week9_Thuchanh3\obj\Debug\Week9_Thuchanh3.csproj.CoreCompileInputs.cache
+D:\Github\TH1397_Laptrinh.NET_.NET\Week9_Thuchanh3\Week9_Thuchanh3\bin\Debug\Week9_Thuchanh3.exe.config
+D:\Github\TH1397_Laptrinh.NET_.NET\Week9_Thuchanh3\Week9_Thuchanh3\bin\Debug\Week9_Thuchanh3.exe
+D:\Github\TH1397_Laptrinh.NET_.NET\Week9_Thuchanh3\Week9_Thuchanh3\bin\Debug\Week9_Thuchanh3.pdb
+D:\Github\TH1397_Laptrinh.NET_.NET\Week9_Thuchanh3\Week9_Thuchanh3\obj\Debug\Week9_Thuchanh3.exe
+D:\Github\TH1397_Laptrinh.NET_.NET\Week9_Thuchanh3\Week9_Thuchanh3\obj\Debug\Week9_Thuchanh3.pdb
+D:\Github\TH1397_Laptrinh.NET_.NET\Week9_Thuchanh3\Week9_Thuchanh3\obj\Debug\Week9_Thuchanh3.Form2.resources
+D:\Github\TH1397_Laptrinh.NET_.NET\Week9_Thuchanh3\Week9_Thuchanh3\obj\Debug\Week9_Thuchanh3.Bai3.resources

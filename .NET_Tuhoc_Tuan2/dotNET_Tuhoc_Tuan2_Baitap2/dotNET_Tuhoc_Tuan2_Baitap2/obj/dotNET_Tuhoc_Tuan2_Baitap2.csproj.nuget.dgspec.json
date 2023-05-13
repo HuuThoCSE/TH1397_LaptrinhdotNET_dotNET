@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\21022008_NguyenHuuTho\\huuthocs\\TH1397_Laptrinh.NET_.NET\\.NET_Tuhoc_Tuan2\\dotNET_Tuhoc_Tuan2_Baitap2\\dotNET_Tuhoc_Tuan2_Baitap2\\dotNET_Tuhoc_Tuan2_Baitap2.csproj": {}
+    "D:\\Github\\TH1397_LaptrinhdotNET_dotNET\\.NET_Tuhoc_Tuan2\\dotNET_Tuhoc_Tuan2_Baitap2\\dotNET_Tuhoc_Tuan2_Baitap2\\dotNET_Tuhoc_Tuan2_Baitap2.csproj": {}
   },
   "projects": {
-    "D:\\21022008_NguyenHuuTho\\huuthocs\\TH1397_Laptrinh.NET_.NET\\.NET_Tuhoc_Tuan2\\dotNET_Tuhoc_Tuan2_Baitap2\\dotNET_Tuhoc_Tuan2_Baitap2\\dotNET_Tuhoc_Tuan2_Baitap2.csproj": {
+    "D:\\Github\\TH1397_LaptrinhdotNET_dotNET\\.NET_Tuhoc_Tuan2\\dotNET_Tuhoc_Tuan2_Baitap2\\dotNET_Tuhoc_Tuan2_Baitap2\\dotNET_Tuhoc_Tuan2_Baitap2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\21022008_NguyenHuuTho\\huuthocs\\TH1397_Laptrinh.NET_.NET\\.NET_Tuhoc_Tuan2\\dotNET_Tuhoc_Tuan2_Baitap2\\dotNET_Tuhoc_Tuan2_Baitap2\\dotNET_Tuhoc_Tuan2_Baitap2.csproj",
+        "projectUniqueName": "D:\\Github\\TH1397_LaptrinhdotNET_dotNET\\.NET_Tuhoc_Tuan2\\dotNET_Tuhoc_Tuan2_Baitap2\\dotNET_Tuhoc_Tuan2_Baitap2\\dotNET_Tuhoc_Tuan2_Baitap2.csproj",
         "projectName": "dotNET_Tuhoc_Tuan2_Baitap2",
-        "projectPath": "D:\\21022008_NguyenHuuTho\\huuthocs\\TH1397_Laptrinh.NET_.NET\\.NET_Tuhoc_Tuan2\\dotNET_Tuhoc_Tuan2_Baitap2\\dotNET_Tuhoc_Tuan2_Baitap2\\dotNET_Tuhoc_Tuan2_Baitap2.csproj",
-        "packagesPath": "C:\\Users\\SINHVIEN\\.nuget\\packages\\",
-        "outputPath": "D:\\21022008_NguyenHuuTho\\huuthocs\\TH1397_Laptrinh.NET_.NET\\.NET_Tuhoc_Tuan2\\dotNET_Tuhoc_Tuan2_Baitap2\\dotNET_Tuhoc_Tuan2_Baitap2\\obj\\",
+        "projectPath": "D:\\Github\\TH1397_LaptrinhdotNET_dotNET\\.NET_Tuhoc_Tuan2\\dotNET_Tuhoc_Tuan2_Baitap2\\dotNET_Tuhoc_Tuan2_Baitap2\\dotNET_Tuhoc_Tuan2_Baitap2.csproj",
+        "packagesPath": "C:\\Users\\huuth\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\TH1397_LaptrinhdotNET_dotNET\\.NET_Tuhoc_Tuan2\\dotNET_Tuhoc_Tuan2_Baitap2\\dotNET_Tuhoc_Tuan2_Baitap2\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\SINHVIEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\huuth\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
