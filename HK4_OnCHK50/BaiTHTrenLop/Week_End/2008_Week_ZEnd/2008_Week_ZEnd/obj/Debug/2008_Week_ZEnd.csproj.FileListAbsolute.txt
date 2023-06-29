@@ -1,0 +1,11 @@
+D:\Github\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiTHTrenLop\Week_End\2008_Week_ZEnd\2008_Week_ZEnd\bin\Debug\2008_Week_ZEnd.exe.config
+D:\Github\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiTHTrenLop\Week_End\2008_Week_ZEnd\2008_Week_ZEnd\bin\Debug\2008_Week_ZEnd.exe
+D:\Github\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiTHTrenLop\Week_End\2008_Week_ZEnd\2008_Week_ZEnd\bin\Debug\2008_Week_ZEnd.pdb
+D:\Github\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiTHTrenLop\Week_End\2008_Week_ZEnd\2008_Week_ZEnd\obj\Debug\2008_Week_ZEnd.csproj.AssemblyReference.cache
+D:\Github\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiTHTrenLop\Week_End\2008_Week_ZEnd\2008_Week_ZEnd\obj\Debug\2008_Week_ZEnd.csproj.SuggestedBindingRedirects.cache
+D:\Github\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiTHTrenLop\Week_End\2008_Week_ZEnd\2008_Week_ZEnd\obj\Debug\_2008_Week_ZEnd.Form1.resources
+D:\Github\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiTHTrenLop\Week_End\2008_Week_ZEnd\2008_Week_ZEnd\obj\Debug\_2008_Week_ZEnd.Properties.Resources.resources
+D:\Github\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiTHTrenLop\Week_End\2008_Week_ZEnd\2008_Week_ZEnd\obj\Debug\2008_Week_ZEnd.csproj.GenerateResource.cache
+D:\Github\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiTHTrenLop\Week_End\2008_Week_ZEnd\2008_Week_ZEnd\obj\Debug\2008_Week_ZEnd.csproj.CoreCompileInputs.cache
+D:\Github\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiTHTrenLop\Week_End\2008_Week_ZEnd\2008_Week_ZEnd\obj\Debug\2008_Week_ZEnd.exe
+D:\Github\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiTHTrenLop\Week_End\2008_Week_ZEnd\2008_Week_ZEnd\obj\Debug\2008_Week_ZEnd.pdb

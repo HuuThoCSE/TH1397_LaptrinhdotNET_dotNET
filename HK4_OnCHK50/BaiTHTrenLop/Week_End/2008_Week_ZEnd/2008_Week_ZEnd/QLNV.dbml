@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLSV2" Class="QLNVDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-TKLNL00;Initial Catalog=QLSV2;Integrated Security=True" SettingsObjectName="_2008_Week_ZEnd.Properties.Settings" SettingsPropertyName="QLSV2ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SINHVIEN" Member="SINHVIENs">
+    <Type Name="SINHVIEN">
+      <Column Name="MaSV" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="GioiTinh" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.ThemSV" Method="ThemSV">
+    <Parameter Name="TEN" Parameter="tEN" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="NS" Parameter="nS" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="GT" Parameter="gT" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

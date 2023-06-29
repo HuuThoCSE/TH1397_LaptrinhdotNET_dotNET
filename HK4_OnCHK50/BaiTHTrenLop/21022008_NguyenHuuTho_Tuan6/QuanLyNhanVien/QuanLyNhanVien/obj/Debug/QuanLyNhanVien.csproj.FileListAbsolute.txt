@@ -1,0 +1,12 @@
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho_Tuan6\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe.config
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho_Tuan6\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho_Tuan6\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.pdb
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho_Tuan6\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.AssemblyReference.cache
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho_Tuan6\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.SuggestedBindingRedirects.cache
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho_Tuan6\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Properties.Resources.resources
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho_Tuan6\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.GenerateResource.cache
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho_Tuan6\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CoreCompileInputs.cache
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho_Tuan6\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.exe
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho_Tuan6\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.pdb
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho_Tuan6\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.DanhMucPhongBan.resources
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho_Tuan6\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Form1.resources
