@@ -30,3 +30,16 @@ exec ThemSV N'Nguyễn Hữu Lộc', '2003-12-10', 1
 exec ThemSV N'Nguyễn Thị Hồng Ngát', '2003-08-26', 0
 exec ThemSV N'Nguyễn Lan Tường', '2003-05-26', 0
 GO
+
+create proc SuaSV(@MaSV int, @HoTen nvarchar(200), @NS date, @GT bit)
+as
+	update SINHVIEN
+	set HoTen = @HoTen, NgaySinh = @NS, GioiTinh = @GT
+	where MaSV = @MaSV
+GO
+
+create proc XoaSV(@MaSV int)
+as
+	delete SINHVIEN
+	where MaSV = @MaSV
+GO

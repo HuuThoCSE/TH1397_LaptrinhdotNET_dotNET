@@ -59,8 +59,7 @@ namespace _2008_Week_ZEnd
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            DialogResult rs = MessageBox.Show("Bạn có muốn thoát?", "Thông báo!", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (rs == DialogResult.OK)
+            if(MessageBox.Show("Bạn có muốn thoát?", "Thông báo!", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
                 Application.Exit();
             }
@@ -75,13 +74,22 @@ namespace _2008_Week_ZEnd
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-
+            db = new QLNVDataContext();
+            db.SuaSV(id, txtHoten.Text, dtpNgaysinh.Value, chbGioitinh.Checked ? true : false);
+            LoadGridSV();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
             db = new QLNVDataContext();
-            db.ThemSV(txtHoten.Text, dtpNgaysinh.Value, chbGioitinh.Checked ? 1 : 0);
+            db.ThemSV(txtHoten.Text, dtpNgaysinh.Value, chbGioitinh.Checked ? true : false); 
+            LoadGridSV();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            db = new QLNVDataContext();
+            db.XoaSV(id);
             LoadGridSV();
         }
     }

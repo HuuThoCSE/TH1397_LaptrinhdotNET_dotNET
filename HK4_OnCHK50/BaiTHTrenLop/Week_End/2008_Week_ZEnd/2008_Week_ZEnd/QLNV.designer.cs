@@ -79,12 +79,21 @@ namespace _2008_Week_ZEnd
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), tEN, nS, gT);
 			return ((int)(result.ReturnValue));
 		}
-
-        internal void ThemSV(string text, DateTime value, int v)
-        {
-            throw new NotImplementedException();
-        }
-    }
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SuaSV")]
+		public int SuaSV([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaSV", DbType="Int")] System.Nullable<int> maSV, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="HoTen", DbType="NVarChar(200)")] string hoTen, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NS", DbType="Date")] System.Nullable<System.DateTime> nS, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="GT", DbType="Bit")] System.Nullable<bool> gT)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maSV, hoTen, nS, gT);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.XoaSV")]
+		public int XoaSV([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaSV", DbType="Int")] System.Nullable<int> maSV)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maSV);
+			return ((int)(result.ReturnValue));
+		}
+	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.SINHVIEN")]
 	public partial class SINHVIEN : INotifyPropertyChanging, INotifyPropertyChanged

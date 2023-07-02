@@ -14,4 +14,15 @@
     <Parameter Name="GT" Parameter="gT" Type="System.Boolean" DbType="Bit" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.SuaSV" Method="SuaSV">
+    <Parameter Name="MaSV" Parameter="maSV" Type="System.Int32" DbType="Int" />
+    <Parameter Name="HoTen" Parameter="hoTen" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="NS" Parameter="nS" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="GT" Parameter="gT" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.XoaSV" Method="XoaSV">
+    <Parameter Name="MaSV" Parameter="maSV" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>
