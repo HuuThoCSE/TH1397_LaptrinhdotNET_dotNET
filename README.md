@@ -168,3 +168,38 @@ private void ClearControls(Control control)
     }
 }
 ```
+
+
+# **Các loại kết nối SQL**
+**Kiểu 1:** Sử dụng SqlCommand và SqlDataReader
+
+- Ưu điểm:
+
+Đơn giản, dễ hiểu.
+Cho phép bạn thực hiện các truy vấn SQL tùy chỉnh mạnh mẽ.
+- Nhược điểm:
+
+Cần viết nhiều mã hơn để xử lý các tác vụ như đọc dữ liệu từ SqlDataReader.
+Không hỗ trợ tự động theo dõi các thay đổi trong các đối tượng lưu trữ.
+Cần viết mã thủ công để chuyển đổi giữa đối tượng và dữ liệu.
+
+**Kiểu 2:** Sử dụng SqlDataAdapter và DataSet
+- Ưu điểm:
+
+Cho phép bạn làm việc với dữ liệu ở mức độ cao hơn, không cần phải quan tâm nhiều đến SQL.
+Hỗ trợ tự động theo dõi các thay đổi trong các đối tượng lưu trữ.
+- Nhược điểm:
+
+Không hỗ trợ trực tiếp các truy vấn LINQ.
+Có thể gặp khó khăn khi làm việc với các truy vấn SQL phức tạp.
+
+**Kiểu 3:** Sử dụng LINQ to SQL
+- Ưu điểm:
+
+Cho phép bạn làm việc với dữ liệu ở mức độ đối tượng, sử dụng cú pháp LINQ để thao tác dữ liệu.
+Hỗ trợ tự động theo dõi các thay đổi trong các đối tượng lưu trữ.
+- Nhược điểm:
+    -  Chỉ hỗ trợ SQL Server.
+    - Không hỗ trợ nhiều tính năng mà các ORM khác như Entity Framework hỗ trợ.
+    
+Mỗi phương pháp đều phù hợp với các tình huống khác nhau, do đó, bạn nên chọn phương pháp phù hợp nhất với nhu cầu của dự án của bạn.
