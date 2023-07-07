@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TynoClass", "TynoClass\TynoClass.csproj", "{2209A611-78CD-4CCB-814B-ED82BC0DEDBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2209A611-78CD-4CCB-814B-ED82BC0DEDBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2209A611-78CD-4CCB-814B-ED82BC0DEDBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2209A611-78CD-4CCB-814B-ED82BC0DEDBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2209A611-78CD-4CCB-814B-ED82BC0DEDBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CE49D0F-D603-4F93-BDD4-A0406F50B31A}
+	EndGlobalSection
+EndGlobal

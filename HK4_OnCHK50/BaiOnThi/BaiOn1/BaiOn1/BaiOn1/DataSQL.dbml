@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SchoolManagement1" Class="DataSQLDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-TKLNL00;Initial Catalog=SchoolManagement1;User ID=sa" SettingsObjectName="BaiOn1.Properties.Settings" SettingsPropertyName="SchoolManagement1ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Classes" Member="Classes">
+    <Type Name="Class">
+      <Column Name="ClassID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ClassName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TeacherID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Class_Student" Member="Students" ThisKey="ClassID" OtherKey="ClassID" Type="Student" />
+      <Association Name="Teacher_Class" Member="Teacher" ThisKey="TeacherID" OtherKey="TeacherID" Type="Teacher" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Students" Member="Students">
+    <Type Name="Student">
+      <Column Name="StudentID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ClassID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Class_Student" Member="Class" ThisKey="ClassID" OtherKey="ClassID" Type="Class" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Teachers" Member="Teachers">
+    <Type Name="Teacher">
+      <Column Name="TeacherID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Subject" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="Teacher_Class" Member="Classes" ThisKey="TeacherID" OtherKey="TeacherID" Type="Class" />
+    </Type>
+  </Table>
+  <Function Name="dbo.addTeachers" Method="addTeachers">
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Subject" Parameter="subject" Type="System.String" DbType="NVarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.suaTeachers" Method="suaTeachers">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Subject" Parameter="subject" Type="System.String" DbType="NVarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.xoaTeachers" Method="xoaTeachers">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

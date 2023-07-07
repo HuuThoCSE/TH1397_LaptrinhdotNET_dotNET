@@ -1,0 +1,11 @@
+D:\21020008_NguyenHuuTho\Tuan11_Thuchanh5\Tuan11_Thuchanh5\bin\Debug\Tuan11_Thuchanh5.exe.config
+D:\21020008_NguyenHuuTho\Tuan11_Thuchanh5\Tuan11_Thuchanh5\bin\Debug\Tuan11_Thuchanh5.exe
+D:\21020008_NguyenHuuTho\Tuan11_Thuchanh5\Tuan11_Thuchanh5\bin\Debug\Tuan11_Thuchanh5.pdb
+D:\21020008_NguyenHuuTho\Tuan11_Thuchanh5\Tuan11_Thuchanh5\obj\Debug\Tuan11_Thuchanh5.csproj.AssemblyReference.cache
+D:\21020008_NguyenHuuTho\Tuan11_Thuchanh5\Tuan11_Thuchanh5\obj\Debug\Tuan11_Thuchanh5.csproj.SuggestedBindingRedirects.cache
+D:\21020008_NguyenHuuTho\Tuan11_Thuchanh5\Tuan11_Thuchanh5\obj\Debug\Tuan11_Thuchanh5.Form1.resources
+D:\21020008_NguyenHuuTho\Tuan11_Thuchanh5\Tuan11_Thuchanh5\obj\Debug\Tuan11_Thuchanh5.Properties.Resources.resources
+D:\21020008_NguyenHuuTho\Tuan11_Thuchanh5\Tuan11_Thuchanh5\obj\Debug\Tuan11_Thuchanh5.csproj.GenerateResource.cache
+D:\21020008_NguyenHuuTho\Tuan11_Thuchanh5\Tuan11_Thuchanh5\obj\Debug\Tuan11_Thuchanh5.csproj.CoreCompileInputs.cache
+D:\21020008_NguyenHuuTho\Tuan11_Thuchanh5\Tuan11_Thuchanh5\obj\Debug\Tuan11_Thuchanh5.exe
+D:\21020008_NguyenHuuTho\Tuan11_Thuchanh5\Tuan11_Thuchanh5\obj\Debug\Tuan11_Thuchanh5.pdb

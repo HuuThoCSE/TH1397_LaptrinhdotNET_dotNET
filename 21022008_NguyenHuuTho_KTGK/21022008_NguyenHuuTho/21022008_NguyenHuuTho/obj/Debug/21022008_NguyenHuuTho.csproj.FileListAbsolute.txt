@@ -1,0 +1,11 @@
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho\21022008_NguyenHuuTho\bin\Debug\21022008_NguyenHuuTho.exe.config
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho\21022008_NguyenHuuTho\bin\Debug\21022008_NguyenHuuTho.exe
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho\21022008_NguyenHuuTho\bin\Debug\21022008_NguyenHuuTho.pdb
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho\21022008_NguyenHuuTho\obj\Debug\21022008_NguyenHuuTho.csproj.AssemblyReference.cache
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho\21022008_NguyenHuuTho\obj\Debug\21022008_NguyenHuuTho.csproj.SuggestedBindingRedirects.cache
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho\21022008_NguyenHuuTho\obj\Debug\_21022008_NguyenHuuTho.Form1.resources
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho\21022008_NguyenHuuTho\obj\Debug\_21022008_NguyenHuuTho.Properties.Resources.resources
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho\21022008_NguyenHuuTho\obj\Debug\21022008_NguyenHuuTho.csproj.GenerateResource.cache
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho\21022008_NguyenHuuTho\obj\Debug\21022008_NguyenHuuTho.csproj.CoreCompileInputs.cache
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho\21022008_NguyenHuuTho\obj\Debug\21022008_NguyenHuuTho.exe
+C:\Users\PC04\Desktop\21022008_NguyenHuuTho\21022008_NguyenHuuTho\21022008_NguyenHuuTho\obj\Debug\21022008_NguyenHuuTho.pdb
