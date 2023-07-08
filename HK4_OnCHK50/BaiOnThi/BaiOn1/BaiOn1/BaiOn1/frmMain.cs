@@ -37,5 +37,10 @@ namespace BaiOn1
             frmTeachers.MdiParent = this;
             frmTeachers.Show();
         }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -26,6 +26,7 @@ namespace BaiOn1
             db = new DataSQLDataContext();
             dgvTeachers.DataSource = db.Teachers;
         }
+
        
         private void frmTeachers_Load(object sender, EventArgs e)
         {

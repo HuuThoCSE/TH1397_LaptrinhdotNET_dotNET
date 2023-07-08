@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLKT" Class="DataQLKTDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-TKLNL00;Initial Catalog=QLKT;Integrated Security=True" SettingsObjectName="BaiOn2.Properties.Settings" SettingsPropertyName="QLKTConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DiemThi" Member="DiemThis">
+    <Type Name="DiemThi">
+      <Column Name="DiemthiID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SinhvienID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MonhocID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Diem" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="MonHoc_DiemThi" Member="MonHoc" ThisKey="MonhocID" OtherKey="MonhocID" Type="MonHoc" IsForeignKey="true" />
+      <Association Name="SinhVien_DiemThi" Member="SinhVien" ThisKey="SinhvienID" OtherKey="SinhvienID" Type="SinhVien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MonHoc" Member="MonHocs">
+    <Type Name="MonHoc">
+      <Column Name="MonhocID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MonhocTen" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="SoTinChi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HocKy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="MonHoc_DiemThi" Member="DiemThis" ThisKey="MonhocID" OtherKey="MonhocID" Type="DiemThi" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SinhVien" Member="SinhViens">
+    <Type Name="SinhVien">
+      <Column Name="SinhvienID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="GioiTinh" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Association Name="SinhVien_DiemThi" Member="DiemThis" ThisKey="SinhvienID" OtherKey="SinhvienID" Type="DiemThi" />
+    </Type>
+  </Table>
+  <Function Name="dbo.themSV" Method="themSV">
+    <Parameter Name="HoTen" Parameter="hoTen" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="NgaySinh" Parameter="ngaySinh" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="GioiTinh" Parameter="gioiTinh" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.xoaSV" Method="xoaSV">
+    <Parameter Name="SinhvienID" Parameter="sinhvienID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.suaSV" Method="suaSV">
+    <Parameter Name="SinhvienID" Parameter="sinhvienID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="HoTen" Parameter="hoTen" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="NgaySinh" Parameter="ngaySinh" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="GioiTinh" Parameter="gioiTinh" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.suaMH" Method="suaMH">
+    <Parameter Name="MonhocID" Parameter="monhocID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MonhocTen" Parameter="monhocTen" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="SoTinChi" Parameter="soTinChi" Type="System.Int32" DbType="Int" />
+    <Parameter Name="HocKy" Parameter="hocKy" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.themMH" Method="themMH">
+    <Parameter Name="MonhocTen" Parameter="monhocTen" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="SoTinChi" Parameter="soTinChi" Type="System.Int32" DbType="Int" />
+    <Parameter Name="HocKy" Parameter="hocKy" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.xoaMH" Method="xoaMH">
+    <Parameter Name="MonhocID" Parameter="monhocID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

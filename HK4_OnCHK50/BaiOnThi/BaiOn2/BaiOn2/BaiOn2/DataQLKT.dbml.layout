@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataQLKT">
+  <DataContextMoniker Name="/DataQLKTDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8f6bddbf-a6e0-4c24-9ce3-42e6a40543c0" absoluteBounds="3.5, 0.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataQLKTDataContext/DiemThi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b83ab67e-8db8-482e-8898-b6cba484f725" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d352e3bd-6e4d-4959-ad6d-b845b0d9ed58" absoluteBounds="0.75, 0.875, 2, 1.5785953776041663">
+      <DataClassMoniker Name="/DataQLKTDataContext/MonHoc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de6b2a82-8a35-4bae-8da1-ac5c9407e38c" absoluteBounds="0.765, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a954f176-2a8b-4276-956e-629245566db4" absoluteBounds="0.75, 3.75, 2, 1.7708968098958326">
+      <DataClassMoniker Name="/DataQLKTDataContext/SinhVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0544ab4a-e13d-4204-b235-82d4c2f4324f" absoluteBounds="0.765, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.66429768880208); (3.5 : 1.66429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataQLKTDataContext/MonHoc/MonHoc_DiemThi" />
+      <nodes>
+        <classShapeMoniker Id="d352e3bd-6e4d-4959-ad6d-b845b0d9ed58" />
+        <classShapeMoniker Id="8f6bddbf-a6e0-4c24-9ce3-42e6a40543c0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.63544840494792); (4.5 : 4.63544840494792); (4.5 : 2.45359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataQLKTDataContext/SinhVien/SinhVien_DiemThi" />
+      <nodes>
+        <classShapeMoniker Id="a954f176-2a8b-4276-956e-629245566db4" />
+        <classShapeMoniker Id="8f6bddbf-a6e0-4c24-9ce3-42e6a40543c0" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
