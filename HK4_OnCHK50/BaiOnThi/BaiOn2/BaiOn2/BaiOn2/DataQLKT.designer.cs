@@ -136,6 +136,27 @@ namespace BaiOn2
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), monhocID);
 			return ((int)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.suaDT")]
+		public int suaDT([global::System.Data.Linq.Mapping.ParameterAttribute(Name="DiemthiID", DbType="Int")] System.Nullable<int> diemthiID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienID", DbType="Int")] System.Nullable<int> sinhvienID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="MonhocID", DbType="Int")] System.Nullable<int> monhocID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Diem", DbType="Float")] System.Nullable<double> diem)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), diemthiID, sinhvienID, monhocID, diem);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.themDT")]
+		public int themDT([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienID", DbType="Int")] System.Nullable<int> sinhvienID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="MonhocID", DbType="Int")] System.Nullable<int> monhocID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Diem", DbType="Float")] System.Nullable<double> diem)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sinhvienID, monhocID, diem);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.xoaDT")]
+		public int xoaDT([global::System.Data.Linq.Mapping.ParameterAttribute(Name="DiemthiID", DbType="Int")] System.Nullable<int> diemthiID)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), diemthiID);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.DiemThi")]

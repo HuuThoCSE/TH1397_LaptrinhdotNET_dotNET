@@ -20,14 +20,14 @@
         <elementListCompartment Id="0544ab4a-e13d-4204-b235-82d4c2f4324f" absoluteBounds="0.765, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.75 : 1.66429768880208); (3.5 : 1.66429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 1.66429768880208); (3.5 : 1.66429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DataQLKTDataContext/MonHoc/MonHoc_DiemThi" />
       <nodes>
         <classShapeMoniker Id="d352e3bd-6e4d-4959-ad6d-b845b0d9ed58" />
         <classShapeMoniker Id="8f6bddbf-a6e0-4c24-9ce3-42e6a40543c0" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 4.63544840494792); (4.5 : 4.63544840494792); (4.5 : 2.45359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 4.63544840494792); (4.5 : 4.63544840494792); (4.5 : 2.45359537760417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DataQLKTDataContext/SinhVien/SinhVien_DiemThi" />
       <nodes>
         <classShapeMoniker Id="a954f176-2a8b-4276-956e-629245566db4" />

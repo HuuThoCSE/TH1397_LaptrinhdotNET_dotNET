@@ -65,4 +65,21 @@
     <Parameter Name="MonhocID" Parameter="monhocID" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.suaDT" Method="suaDT">
+    <Parameter Name="DiemthiID" Parameter="diemthiID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SinhvienID" Parameter="sinhvienID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MonhocID" Parameter="monhocID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Diem" Parameter="diem" Type="System.Double" DbType="Float" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.themDT" Method="themDT">
+    <Parameter Name="SinhvienID" Parameter="sinhvienID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MonhocID" Parameter="monhocID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Diem" Parameter="diem" Type="System.Double" DbType="Float" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.xoaDT" Method="xoaDT">
+    <Parameter Name="DiemthiID" Parameter="diemthiID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>

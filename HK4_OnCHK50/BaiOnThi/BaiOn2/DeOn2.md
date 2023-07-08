@@ -65,14 +65,14 @@ Phần I: Cơ Sở Dữ Liệu (CSDL) - 2.0 điểm
     - Hiểm thị
 
 - Form "Quản lý điểm": Thêm, sửa, xóa, hiển thị điểm thi của sinh viên. Sử dụng textbox để nhập dữ liệu.
-    - Thêm
-    - Sửa
-    - Xóa
-    - Hiểm thị
+    - [X] Thêm
+    - [X] Sửa
+    - [X] Xóa
+    - [X] Hiểm thị
 
 **2.2. Thao tác dữ liệu với ADO.NET:**
 
-- Trong mỗi form, thực hiện các thao tác: Thêm, sửa, xóa, hiển thị dữ liệu từ CSDL.
+- [X] Trong mỗi form, thực hiện các thao tác: Thêm, sửa, xóa, hiển thị dữ liệu từ CSDL.
 - Cho phép thêm, sửa, xóa nhiều mẩu tin cùng lúc.
 - Dịch chuyển giữa các mẩu tin trong danh sách: về đầu, về trước, về sau, về cuối.
 

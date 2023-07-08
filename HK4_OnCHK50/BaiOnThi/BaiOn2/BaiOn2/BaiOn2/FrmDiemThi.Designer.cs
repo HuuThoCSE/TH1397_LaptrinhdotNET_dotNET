@@ -28,13 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.colHocKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colMonhocTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colMonhocID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvDiemthi = new System.Windows.Forms.DataGridView();
-            this.colSoTinChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtHocky = new System.Windows.Forms.TextBox();
+            this.txtDiem = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnDong = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -45,71 +40,44 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cbSinhvien = new System.Windows.Forms.ComboBox();
             this.cbMonhoc = new System.Windows.Forms.ComboBox();
+            this.colSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDiemthiID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSinhvienID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colHoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMonhocID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMonhocTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDiemthi)).BeginInit();
             this.SuspendLayout();
-            // 
-            // colHocKy
-            // 
-            this.colHocKy.DataPropertyName = "HocKy";
-            this.colHocKy.HeaderText = "Học kỳ";
-            this.colHocKy.MinimumWidth = 6;
-            this.colHocKy.Name = "colHocKy";
-            this.colHocKy.Width = 125;
-            // 
-            // colMonhocTen
-            // 
-            this.colMonhocTen.DataPropertyName = "MonhocTen";
-            this.colMonhocTen.HeaderText = "Môn học";
-            this.colMonhocTen.MinimumWidth = 6;
-            this.colMonhocTen.Name = "colMonhocTen";
-            this.colMonhocTen.Width = 125;
-            // 
-            // colMonhocID
-            // 
-            this.colMonhocID.DataPropertyName = "MonhocID";
-            this.colMonhocID.HeaderText = "ID";
-            this.colMonhocID.MinimumWidth = 6;
-            this.colMonhocID.Name = "colMonhocID";
-            this.colMonhocID.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "STT";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 125;
             // 
             // dgvDiemthi
             // 
             this.dgvDiemthi.AllowUserToAddRows = false;
             this.dgvDiemthi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDiemthi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
+            this.colSTT,
+            this.colDiemthiID,
+            this.colSinhvienID,
+            this.colHoTen,
             this.colMonhocID,
             this.colMonhocTen,
-            this.colSoTinChi,
-            this.colHocKy});
-            this.dgvDiemthi.Location = new System.Drawing.Point(55, 387);
+            this.colDiem});
+            this.dgvDiemthi.Location = new System.Drawing.Point(52, 392);
             this.dgvDiemthi.Name = "dgvDiemthi";
             this.dgvDiemthi.RowHeadersWidth = 51;
             this.dgvDiemthi.RowTemplate.Height = 24;
             this.dgvDiemthi.Size = new System.Drawing.Size(926, 140);
             this.dgvDiemthi.TabIndex = 39;
+            this.dgvDiemthi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDiemthi_CellClick);
+            this.dgvDiemthi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDiemthi_CellContentClick);
+            this.dgvDiemthi.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvDiemthi_RowPrePaint);
             // 
-            // colSoTinChi
+            // txtDiem
             // 
-            this.colSoTinChi.DataPropertyName = "SoTinChi";
-            this.colSoTinChi.HeaderText = "Số tín chỉ";
-            this.colSoTinChi.MinimumWidth = 6;
-            this.colSoTinChi.Name = "colSoTinChi";
-            this.colSoTinChi.Width = 125;
-            // 
-            // txtHocky
-            // 
-            this.txtHocky.Location = new System.Drawing.Point(393, 191);
-            this.txtHocky.Name = "txtHocky";
-            this.txtHocky.Size = new System.Drawing.Size(354, 22);
-            this.txtHocky.TabIndex = 38;
+            this.txtDiem.Location = new System.Drawing.Point(393, 191);
+            this.txtDiem.Name = "txtDiem";
+            this.txtDiem.Size = new System.Drawing.Size(354, 22);
+            this.txtDiem.TabIndex = 38;
             // 
             // label3
             // 
@@ -137,6 +105,7 @@
             this.btnXoa.TabIndex = 34;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -146,6 +115,7 @@
             this.btnSua.TabIndex = 35;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -202,6 +172,64 @@
             this.cbMonhoc.Size = new System.Drawing.Size(354, 24);
             this.cbMonhoc.TabIndex = 41;
             // 
+            // colSTT
+            // 
+            this.colSTT.HeaderText = "STT";
+            this.colSTT.MinimumWidth = 6;
+            this.colSTT.Name = "colSTT";
+            this.colSTT.Width = 125;
+            // 
+            // colDiemthiID
+            // 
+            this.colDiemthiID.DataPropertyName = "DiemthiID";
+            this.colDiemthiID.HeaderText = "DiemthiID";
+            this.colDiemthiID.MinimumWidth = 6;
+            this.colDiemthiID.Name = "colDiemthiID";
+            this.colDiemthiID.Visible = false;
+            this.colDiemthiID.Width = 125;
+            // 
+            // colSinhvienID
+            // 
+            this.colSinhvienID.DataPropertyName = "SinhvienID";
+            this.colSinhvienID.HeaderText = "SinhvienID";
+            this.colSinhvienID.MinimumWidth = 6;
+            this.colSinhvienID.Name = "colSinhvienID";
+            this.colSinhvienID.Visible = false;
+            this.colSinhvienID.Width = 125;
+            // 
+            // colHoTen
+            // 
+            this.colHoTen.DataPropertyName = "HoTen";
+            this.colHoTen.HeaderText = "Họ tên";
+            this.colHoTen.MinimumWidth = 6;
+            this.colHoTen.Name = "colHoTen";
+            this.colHoTen.Width = 125;
+            // 
+            // colMonhocID
+            // 
+            this.colMonhocID.DataPropertyName = "MonhocID";
+            this.colMonhocID.HeaderText = "MonHocID";
+            this.colMonhocID.MinimumWidth = 6;
+            this.colMonhocID.Name = "colMonhocID";
+            this.colMonhocID.Visible = false;
+            this.colMonhocID.Width = 125;
+            // 
+            // colMonhocTen
+            // 
+            this.colMonhocTen.DataPropertyName = "MonhocTen";
+            this.colMonhocTen.HeaderText = "Môn học";
+            this.colMonhocTen.MinimumWidth = 6;
+            this.colMonhocTen.Name = "colMonhocTen";
+            this.colMonhocTen.Width = 125;
+            // 
+            // colDiem
+            // 
+            this.colDiem.DataPropertyName = "Diem";
+            this.colDiem.HeaderText = "Điểm";
+            this.colDiem.MinimumWidth = 6;
+            this.colDiem.Name = "colDiem";
+            this.colDiem.Width = 125;
+            // 
             // FrmDiemThi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -210,7 +238,7 @@
             this.Controls.Add(this.cbMonhoc);
             this.Controls.Add(this.cbSinhvien);
             this.Controls.Add(this.dgvDiemthi);
-            this.Controls.Add(this.txtHocky);
+            this.Controls.Add(this.txtDiem);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.btnXoa);
@@ -229,14 +257,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn colHocKy;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colMonhocTen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colMonhocID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridView dgvDiemthi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colSoTinChi;
-        private System.Windows.Forms.TextBox txtHocky;
+        private System.Windows.Forms.TextBox txtDiem;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnDong;
         private System.Windows.Forms.Button btnXoa;
@@ -247,5 +269,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbSinhvien;
         private System.Windows.Forms.ComboBox cbMonhoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSTT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDiemthiID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSinhvienID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colHoTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMonhocID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMonhocTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDiem;
     }
 }
