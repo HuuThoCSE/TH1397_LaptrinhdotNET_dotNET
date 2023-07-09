@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataQuanLyClass">
+  <DataContextMoniker Name="/DataQuanLyClassDataContext" />
+  <nestedChildShapes>
+    <classShape Id="72c85dd6-9d7b-4a87-a760-23b65252cbcb" absoluteBounds="6.25, 1.5, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DataQuanLyClassDataContext/ThamGia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="85482a6b-9127-4e1f-ba6e-5a6ee7487f6d" absoluteBounds="6.265, 1.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="68fb9688-13f8-4b7a-a5e1-3b9d8f32455b" absoluteBounds="3.5, 5.25, 2, 1.7708968098958326">
+      <DataClassMoniker Name="/DataQuanLyClassDataContext/SuKien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a69ebdfb-c0cc-46fd-ac78-71bd602a7472" absoluteBounds="3.515, 5.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c777a537-a793-47dc-95a3-57aff58eff84" absoluteBounds="3.5, 1, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/DataQuanLyClassDataContext/SinhVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0c1347fd-f1b8-4b8f-ac72-c20200a26976" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a97e1c35-7a70-433a-8b2d-f1cf9a8d16ab" absoluteBounds="0.75, 1.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataQuanLyClassDataContext/Lop" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4df24812-68a9-4d48-b5c7-386e86c43f5e" absoluteBounds="0.765, 1.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 6.13544840494792); (7.25 : 6.13544840494792); (7.25 : 2.69399251302083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataQuanLyClassDataContext/SuKien/SuKien_ThamGia" />
+      <nodes>
+        <classShapeMoniker Id="68fb9688-13f8-4b7a-a5e1-3b9d8f32455b" />
+        <classShapeMoniker Id="72c85dd6-9d7b-4a87-a760-23b65252cbcb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.09699625651042); (6.25 : 2.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataQuanLyClassDataContext/SinhVien/SinhVien_ThamGia" />
+      <nodes>
+        <classShapeMoniker Id="c777a537-a793-47dc-95a3-57aff58eff84" />
+        <classShapeMoniker Id="72c85dd6-9d7b-4a87-a760-23b65252cbcb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.16429768880208); (3.5 : 2.16429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataQuanLyClassDataContext/Lop/Lop_SinhVien" />
+      <nodes>
+        <classShapeMoniker Id="a97e1c35-7a70-433a-8b2d-f1cf9a8d16ab" />
+        <classShapeMoniker Id="c777a537-a793-47dc-95a3-57aff58eff84" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,13 @@
+D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3\bin\Debug\BaiOn3.exe.config
+D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3\bin\Debug\BaiOn3.exe
+D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3\bin\Debug\BaiOn3.pdb
+D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3\obj\Debug\BaiOn3.csproj.AssemblyReference.cache
+D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3\obj\Debug\BaiOn3.csproj.SuggestedBindingRedirects.cache
+D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3\obj\Debug\BaiOn3.FrmMain.resources
+D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3\obj\Debug\BaiOn3.Properties.Resources.resources
+D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3\obj\Debug\BaiOn3.csproj.GenerateResource.cache
+D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3\obj\Debug\BaiOn3.csproj.CoreCompileInputs.cache
+D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3\obj\Debug\BaiOn3.exe
+D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3\obj\Debug\BaiOn3.pdb
+D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3\obj\Debug\BaiOn3.FrmLop.resources
+D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3\obj\Debug\BaiOn3.FrmSinhVien.resources

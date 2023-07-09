@@ -73,18 +73,23 @@ Phần I: Cơ Sở Dữ Liệu (CSDL) - 2.0 điểm
 **2.2. Thao tác dữ liệu với ADO.NET:**
 
 - [X] Trong mỗi form, thực hiện các thao tác: Thêm, sửa, xóa, hiển thị dữ liệu từ CSDL.
-- Cho phép thêm, sửa, xóa nhiều mẩu tin cùng lúc.
+- [X] Cho phép thêm, sửa, xóa nhiều mẩu tin cùng lúc.
 - Dịch chuyển giữa các mẩu tin trong danh sách: về đầu, về trước, về sau, về cuối.
 
 **2.3. (Độ khó cao) Thực hiện thao tác phức tạp với ADO.NET:**
 
-- Tạo chức năng tìm kiếm sinh viên dựa trên tên hoặc ID. Kết quả tìm kiếm phải cung cấp thông tin chi tiết của sinh viên đó.
+- [X] Tạo chức năng tìm kiếm sinh viên dựa trên tên hoặc ID. Kết quả tìm kiếm phải cung cấp thông tin chi tiết của sinh viên đó.
 - Tạo chức năng thống kê, bao gồm: tính tổng số sinh viên, tổng số môn học, điểm trung bình của mỗi sinh viên.
 
 **2.4. (Độ khó cao) Xử lý lỗi và ngoại lệ:**
 
 - Xử lý các lỗi và ngoại lệ có thể xảy ra khi kết nối đến CSDL, thực hiện các thao tác trên CSDL.
 - Tạo các thông báo lỗi rõ ràng để người dùng biết được tình trạng của hệ thống.
+    + Lỗi kết nối đến cơ sở dữ liệu: Nếu chương trình không thể kết nối đến cơ sở dữ liệu, bạn nên thông báo cho người dùng với một thông báo lỗi phù hợp, chẳng hạn như "***Không thể kết nối đến cơ sở dữ liệu. Vui lòng kiểm tra lại kết nối mạng của bạn***".
+    + Lỗi khi truy vấn dữ liệu: Nếu một truy vấn SQL gặp lỗi, bạn nên thông báo cho người dùng với một thông báo như "***Có lỗi khi truy xuất dữ liệu từ cơ sở dữ liệu***".
+    + Lỗi khi nhập dữ liệu không hợp lệ: Nếu người dùng nhập dữ liệu không hợp lệ, bạn nên thông báo với họ một cách rõ ràng về vấn đề, ví dụ: "ID sinh viên không được để trống" hoặc "**Điểm thi phải là một số từ 0 đến 10**".
+    + Lỗi khi cố gắng cập nhật hoặc xóa một mẩu tin không tồn tại: "***Không tìm thấy sinh viên với ID đã cho***".
+    + Lỗi trùng lặp dữ liệu, ví dụ khi thêm một sinh viên có ID đã tồn tại: "***Một sinh viên với ID này đã tồn tại trong cơ sở dữ liệu***".
 
 **Phần III: Phân quyền hệ thống – 2.0 điểm**
 

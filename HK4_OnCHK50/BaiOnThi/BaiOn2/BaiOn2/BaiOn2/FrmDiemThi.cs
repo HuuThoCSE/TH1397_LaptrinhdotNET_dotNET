@@ -88,5 +88,23 @@ namespace BaiOn2
             db.xoaDT(DiemthiID);
             loadData();
         }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            db = new DataQLKTDataContext();
+            var dl = from sv in db.SinhViens
+                     from dt in db.DiemThis
+                     from mh in db.MonHocs
+                     where dt.SinhvienID == sv.SinhvienID && dt.MonhocID == mh.MonhocID
+                     where sv.SinhvienID == (int)cbSinhvien.SelectedValue
+                     where mh.MonhocID == (int)cbMonhoc.SelectedValue
+                     select new { sv.SinhvienID, sv.HoTen, dt.MonhocID, mh.MonhocTen, dt.DiemthiID, dt.Diem };
+            dgvDiemthi.DataSource = dl;
+        }
     }
 }

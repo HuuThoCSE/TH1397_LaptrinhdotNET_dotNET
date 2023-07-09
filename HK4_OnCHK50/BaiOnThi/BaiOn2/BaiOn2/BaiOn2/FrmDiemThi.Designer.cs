@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             this.dgvDiemthi = new System.Windows.Forms.DataGridView();
+            this.colSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDiemthiID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSinhvienID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colHoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMonhocID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMonhocTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtDiem = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnDong = new System.Windows.Forms.Button();
@@ -40,13 +47,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cbSinhvien = new System.Windows.Forms.ComboBox();
             this.cbMonhoc = new System.Windows.Forms.ComboBox();
-            this.colSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDiemthiID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSinhvienID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colHoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colMonhocID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colMonhocTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnTim = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDiemthi)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +63,7 @@
             this.colMonhocID,
             this.colMonhocTen,
             this.colDiem});
-            this.dgvDiemthi.Location = new System.Drawing.Point(52, 392);
+            this.dgvDiemthi.Location = new System.Drawing.Point(51, 396);
             this.dgvDiemthi.Name = "dgvDiemthi";
             this.dgvDiemthi.RowHeadersWidth = 51;
             this.dgvDiemthi.RowTemplate.Height = 24;
@@ -71,106 +72,6 @@
             this.dgvDiemthi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDiemthi_CellClick);
             this.dgvDiemthi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDiemthi_CellContentClick);
             this.dgvDiemthi.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvDiemthi_RowPrePaint);
-            // 
-            // txtDiem
-            // 
-            this.txtDiem.Location = new System.Drawing.Point(393, 191);
-            this.txtDiem.Name = "txtDiem";
-            this.txtDiem.Size = new System.Drawing.Size(354, 22);
-            this.txtDiem.TabIndex = 38;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(334, 197);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 16);
-            this.label3.TabIndex = 37;
-            this.label3.Text = "Điểm:";
-            // 
-            // btnDong
-            // 
-            this.btnDong.Location = new System.Drawing.Point(702, 284);
-            this.btnDong.Name = "btnDong";
-            this.btnDong.Size = new System.Drawing.Size(75, 23);
-            this.btnDong.TabIndex = 33;
-            this.btnDong.Text = "Đóng";
-            this.btnDong.UseVisualStyleBackColor = true;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Location = new System.Drawing.Point(549, 284);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 23);
-            this.btnXoa.TabIndex = 34;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btnSua
-            // 
-            this.btnSua.Location = new System.Drawing.Point(414, 284);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 23);
-            this.btnSua.TabIndex = 35;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
-            // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(264, 284);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 23);
-            this.btnThem.TabIndex = 36;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(311, 101);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 16);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "Sinh viên:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(23, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(220, 29);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "Manage DiemThi";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(316, 147);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 16);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "Môn học:";
-            // 
-            // cbSinhvien
-            // 
-            this.cbSinhvien.FormattingEnabled = true;
-            this.cbSinhvien.Location = new System.Drawing.Point(393, 101);
-            this.cbSinhvien.Name = "cbSinhvien";
-            this.cbSinhvien.Size = new System.Drawing.Size(354, 24);
-            this.cbSinhvien.TabIndex = 40;
-            // 
-            // cbMonhoc
-            // 
-            this.cbMonhoc.FormattingEnabled = true;
-            this.cbMonhoc.Location = new System.Drawing.Point(393, 144);
-            this.cbMonhoc.Name = "cbMonhoc";
-            this.cbMonhoc.Size = new System.Drawing.Size(354, 24);
-            this.cbMonhoc.TabIndex = 41;
             // 
             // colSTT
             // 
@@ -230,6 +131,117 @@
             this.colDiem.Name = "colDiem";
             this.colDiem.Width = 125;
             // 
+            // txtDiem
+            // 
+            this.txtDiem.Location = new System.Drawing.Point(347, 206);
+            this.txtDiem.Name = "txtDiem";
+            this.txtDiem.Size = new System.Drawing.Size(354, 22);
+            this.txtDiem.TabIndex = 38;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(288, 212);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 16);
+            this.label3.TabIndex = 37;
+            this.label3.Text = "Điểm:";
+            // 
+            // btnDong
+            // 
+            this.btnDong.Location = new System.Drawing.Point(702, 284);
+            this.btnDong.Name = "btnDong";
+            this.btnDong.Size = new System.Drawing.Size(75, 23);
+            this.btnDong.TabIndex = 33;
+            this.btnDong.Text = "Đóng";
+            this.btnDong.UseVisualStyleBackColor = true;
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(459, 284);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 23);
+            this.btnXoa.TabIndex = 34;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnSua
+            // 
+            this.btnSua.Location = new System.Drawing.Point(324, 284);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(75, 23);
+            this.btnSua.TabIndex = 35;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(174, 284);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(75, 23);
+            this.btnThem.TabIndex = 36;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(265, 116);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 16);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "Sinh viên:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(23, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(220, 29);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Manage DiemThi";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(270, 162);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 16);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Môn học:";
+            // 
+            // cbSinhvien
+            // 
+            this.cbSinhvien.FormattingEnabled = true;
+            this.cbSinhvien.Location = new System.Drawing.Point(347, 116);
+            this.cbSinhvien.Name = "cbSinhvien";
+            this.cbSinhvien.Size = new System.Drawing.Size(354, 24);
+            this.cbSinhvien.TabIndex = 40;
+            // 
+            // cbMonhoc
+            // 
+            this.cbMonhoc.FormattingEnabled = true;
+            this.cbMonhoc.Location = new System.Drawing.Point(347, 159);
+            this.cbMonhoc.Name = "cbMonhoc";
+            this.cbMonhoc.Size = new System.Drawing.Size(354, 24);
+            this.cbMonhoc.TabIndex = 41;
+            // 
+            // btnTim
+            // 
+            this.btnTim.Location = new System.Drawing.Point(583, 284);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(75, 23);
+            this.btnTim.TabIndex = 34;
+            this.btnTim.Text = "Tìm";
+            this.btnTim.UseVisualStyleBackColor = true;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
+            // 
             // FrmDiemThi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -241,6 +253,7 @@
             this.Controls.Add(this.txtDiem);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnDong);
+            this.Controls.Add(this.btnTim);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
@@ -276,5 +289,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colMonhocID;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMonhocTen;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDiem;
+        private System.Windows.Forms.Button btnTim;
     }
 }
