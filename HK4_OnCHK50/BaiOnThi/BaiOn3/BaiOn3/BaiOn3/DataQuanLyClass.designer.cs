@@ -30,15 +30,18 @@ namespace BaiOn3
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertSuKien(SuKien instance);
-    partial void UpdateSuKien(SuKien instance);
-    partial void DeleteSuKien(SuKien instance);
+    partial void InsertHocky(Hocky instance);
+    partial void UpdateHocky(Hocky instance);
+    partial void DeleteHocky(Hocky instance);
     partial void InsertSinhVien(SinhVien instance);
     partial void UpdateSinhVien(SinhVien instance);
     partial void DeleteSinhVien(SinhVien instance);
     partial void InsertLop(Lop instance);
     partial void UpdateLop(Lop instance);
     partial void DeleteLop(Lop instance);
+    partial void InsertSuKien(SuKien instance);
+    partial void UpdateSuKien(SuKien instance);
+    partial void DeleteSuKien(SuKien instance);
     #endregion
 		
 		public DataQuanLyClassDataContext() : 
@@ -71,19 +74,11 @@ namespace BaiOn3
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<ThamGia> ThamGias
+		public System.Data.Linq.Table<Hocky> Hockies
 		{
 			get
 			{
-				return this.GetTable<ThamGia>();
-			}
-		}
-		
-		public System.Data.Linq.Table<SuKien> SuKiens
-		{
-			get
-			{
-				return this.GetTable<SuKien>();
+				return this.GetTable<Hocky>();
 			}
 		}
 		
@@ -103,6 +98,29 @@ namespace BaiOn3
 			}
 		}
 		
+		public System.Data.Linq.Table<SinhVienSuKien> SinhVienSuKiens
+		{
+			get
+			{
+				return this.GetTable<SinhVienSuKien>();
+			}
+		}
+		
+		public System.Data.Linq.Table<SuKien> SuKiens
+		{
+			get
+			{
+				return this.GetTable<SuKien>();
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.joinSukien")]
+		public int joinSukien([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienID", DbType="Int")] System.Nullable<int> sinhvienID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienID", DbType="Int")] System.Nullable<int> sukienID)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sinhvienID, sukienID);
+			return ((int)(result.ReturnValue));
+		}
+		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.suaLop")]
 		public int suaLop([global::System.Data.Linq.Mapping.ParameterAttribute(Name="LopID", DbType="Int")] System.Nullable<int> lopID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="LopMa", DbType="VarChar(8)")] string lopMa, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="LopTen", DbType="NVarChar(200)")] string lopTen, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SoSinhVien", DbType="Int")] System.Nullable<int> soSinhVien)
 		{
@@ -111,9 +129,16 @@ namespace BaiOn3
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.suaSinhVien")]
-		public int suaSinhVien([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienID", DbType="Int")] System.Nullable<int> sinhvienID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="MSSV", DbType="VarChar(8)")] string mSSV, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienHo", DbType="NVarChar(100)")] string sinhvienHo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienTen", DbType="NVarChar(100)")] string sinhvienTen, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienNgaySinh", DbType="Date")] System.Nullable<System.DateTime> sinhvienNgaySinh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienSDT", DbType="VarChar(13)")] string sinhvienSDT, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienEmail", DbType="NVarChar(500)")] string sinhvienEmail, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="LopID", DbType="Int")] System.Nullable<int> lopID)
+		public int suaSinhVien([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienID", DbType="Int")] System.Nullable<int> sinhvienID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="MSSV", DbType="VarChar(8)")] string mSSV, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienHo", DbType="NVarChar(100)")] string sinhvienHo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienTen", DbType="NVarChar(100)")] string sinhvienTen, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienGioitinh", DbType="Bit")] System.Nullable<bool> sinhvienGioitinh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienNgaySinh", DbType="Date")] System.Nullable<System.DateTime> sinhvienNgaySinh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienSDT", DbType="VarChar(13)")] string sinhvienSDT, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienEmail", DbType="NVarChar(500)")] string sinhvienEmail, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="LopID", DbType="Int")] System.Nullable<int> lopID)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sinhvienID, mSSV, sinhvienHo, sinhvienTen, sinhvienNgaySinh, sinhvienSDT, sinhvienEmail, lopID);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sinhvienID, mSSV, sinhvienHo, sinhvienTen, sinhvienGioitinh, sinhvienNgaySinh, sinhvienSDT, sinhvienEmail, lopID);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.suaSuKien")]
+		public int suaSuKien([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienID", DbType="Int")] System.Nullable<int> sukienID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienTen", DbType="NVarChar(500)")] string sukienTen, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="HockyID", DbType="Int")] System.Nullable<int> hockyID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienTimeStart", DbType="DateTime")] System.Nullable<System.DateTime> sukienTimeStart, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienTimeEnd", DbType="DateTime")] System.Nullable<System.DateTime> sukienTimeEnd, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienDiadiem", DbType="NVarChar(500)")] string sukienDiadiem)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sukienID, sukienTen, hockyID, sukienTimeStart, sukienTimeEnd, sukienDiadiem);
 			return ((int)(result.ReturnValue));
 		}
 		
@@ -125,192 +150,98 @@ namespace BaiOn3
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.themSinhvien")]
-		public int themSinhvien([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MSSV", DbType="VarChar(8)")] string mSSV, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienHo", DbType="NVarChar(100)")] string sinhvienHo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienTen", DbType="NVarChar(100)")] string sinhvienTen, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienNgaySinh", DbType="Date")] System.Nullable<System.DateTime> sinhvienNgaySinh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienSDT", DbType="VarChar(13)")] string sinhvienSDT, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienEmail", DbType="NVarChar(500)")] string sinhvienEmail, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="LopID", DbType="Int")] System.Nullable<int> lopID)
+		public int themSinhvien([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MSSV", DbType="VarChar(8)")] string mSSV, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienHo", DbType="NVarChar(100)")] string sinhvienHo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienTen", DbType="NVarChar(100)")] string sinhvienTen, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienGioitinh", DbType="Bit")] System.Nullable<bool> sinhvienGioitinh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienNgaySinh", DbType="Date")] System.Nullable<System.DateTime> sinhvienNgaySinh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienSDT", DbType="VarChar(13)")] string sinhvienSDT, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienEmail", DbType="NVarChar(500)")] string sinhvienEmail, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="LopID", DbType="Int")] System.Nullable<int> lopID)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), mSSV, sinhvienHo, sinhvienTen, sinhvienNgaySinh, sinhvienSDT, sinhvienEmail, lopID);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), mSSV, sinhvienHo, sinhvienTen, sinhvienGioitinh, sinhvienNgaySinh, sinhvienSDT, sinhvienEmail, lopID);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.themSuKien")]
+		public int themSuKien([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienTen", DbType="NVarChar(500)")] string sukienTen, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="HockyID", DbType="Int")] System.Nullable<int> hockyID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienTimeStart", DbType="DateTime")] System.Nullable<System.DateTime> sukienTimeStart, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienTimeEnd", DbType="DateTime")] System.Nullable<System.DateTime> sukienTimeEnd, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienDiadiem", DbType="NVarChar(500)")] string sukienDiadiem)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sukienTen, hockyID, sukienTimeStart, sukienTimeEnd, sukienDiadiem);
 			return ((int)(result.ReturnValue));
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ThamGia")]
-	public partial class ThamGia
-	{
-		
-		private System.Nullable<int> _SinhvienID;
-		
-		private System.Nullable<int> _SukienID;
-		
-		public ThamGia()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SinhvienID", DbType="Int")]
-		public System.Nullable<int> SinhvienID
-		{
-			get
-			{
-				return this._SinhvienID;
-			}
-			set
-			{
-				if ((this._SinhvienID != value))
-				{
-					this._SinhvienID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SukienID", DbType="Int")]
-		public System.Nullable<int> SukienID
-		{
-			get
-			{
-				return this._SukienID;
-			}
-			set
-			{
-				if ((this._SukienID != value))
-				{
-					this._SukienID = value;
-				}
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.SuKien")]
-	public partial class SuKien : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Hocky")]
+	public partial class Hocky : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private int _SukienID;
+		private int _HockyID;
 		
-		private string _SukienTen;
+		private string _HockyMa;
 		
-		private System.Nullable<System.DateTime> _SukienTimeStart;
-		
-		private System.Nullable<System.DateTime> _SukienTimeEnd;
-		
-		private string _SukienDiadiem;
+		private EntitySet<SuKien> _SuKiens;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnSukienIDChanging(int value);
-    partial void OnSukienIDChanged();
-    partial void OnSukienTenChanging(string value);
-    partial void OnSukienTenChanged();
-    partial void OnSukienTimeStartChanging(System.Nullable<System.DateTime> value);
-    partial void OnSukienTimeStartChanged();
-    partial void OnSukienTimeEndChanging(System.Nullable<System.DateTime> value);
-    partial void OnSukienTimeEndChanged();
-    partial void OnSukienDiadiemChanging(string value);
-    partial void OnSukienDiadiemChanged();
+    partial void OnHockyIDChanging(int value);
+    partial void OnHockyIDChanged();
+    partial void OnHockyMaChanging(string value);
+    partial void OnHockyMaChanged();
     #endregion
 		
-		public SuKien()
+		public Hocky()
 		{
+			this._SuKiens = new EntitySet<SuKien>(new Action<SuKien>(this.attach_SuKiens), new Action<SuKien>(this.detach_SuKiens));
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SukienID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int SukienID
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HockyID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int HockyID
 		{
 			get
 			{
-				return this._SukienID;
+				return this._HockyID;
 			}
 			set
 			{
-				if ((this._SukienID != value))
+				if ((this._HockyID != value))
 				{
-					this.OnSukienIDChanging(value);
+					this.OnHockyIDChanging(value);
 					this.SendPropertyChanging();
-					this._SukienID = value;
-					this.SendPropertyChanged("SukienID");
-					this.OnSukienIDChanged();
+					this._HockyID = value;
+					this.SendPropertyChanged("HockyID");
+					this.OnHockyIDChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SukienTen", DbType="NVarChar(500)")]
-		public string SukienTen
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HockyMa", DbType="VarChar(3)")]
+		public string HockyMa
 		{
 			get
 			{
-				return this._SukienTen;
+				return this._HockyMa;
 			}
 			set
 			{
-				if ((this._SukienTen != value))
+				if ((this._HockyMa != value))
 				{
-					this.OnSukienTenChanging(value);
+					this.OnHockyMaChanging(value);
 					this.SendPropertyChanging();
-					this._SukienTen = value;
-					this.SendPropertyChanged("SukienTen");
-					this.OnSukienTenChanged();
+					this._HockyMa = value;
+					this.SendPropertyChanged("HockyMa");
+					this.OnHockyMaChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SukienTimeStart", DbType="DateTime")]
-		public System.Nullable<System.DateTime> SukienTimeStart
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Hocky_SuKien", Storage="_SuKiens", ThisKey="HockyID", OtherKey="HockyID")]
+		public EntitySet<SuKien> SuKiens
 		{
 			get
 			{
-				return this._SukienTimeStart;
+				return this._SuKiens;
 			}
 			set
 			{
-				if ((this._SukienTimeStart != value))
-				{
-					this.OnSukienTimeStartChanging(value);
-					this.SendPropertyChanging();
-					this._SukienTimeStart = value;
-					this.SendPropertyChanged("SukienTimeStart");
-					this.OnSukienTimeStartChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SukienTimeEnd", DbType="DateTime")]
-		public System.Nullable<System.DateTime> SukienTimeEnd
-		{
-			get
-			{
-				return this._SukienTimeEnd;
-			}
-			set
-			{
-				if ((this._SukienTimeEnd != value))
-				{
-					this.OnSukienTimeEndChanging(value);
-					this.SendPropertyChanging();
-					this._SukienTimeEnd = value;
-					this.SendPropertyChanged("SukienTimeEnd");
-					this.OnSukienTimeEndChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SukienDiadiem", DbType="NVarChar(500)")]
-		public string SukienDiadiem
-		{
-			get
-			{
-				return this._SukienDiadiem;
-			}
-			set
-			{
-				if ((this._SukienDiadiem != value))
-				{
-					this.OnSukienDiadiemChanging(value);
-					this.SendPropertyChanging();
-					this._SukienDiadiem = value;
-					this.SendPropertyChanged("SukienDiadiem");
-					this.OnSukienDiadiemChanged();
-				}
+				this._SuKiens.Assign(value);
 			}
 		}
 		
@@ -333,6 +264,18 @@ namespace BaiOn3
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
+		
+		private void attach_SuKiens(SuKien entity)
+		{
+			this.SendPropertyChanging();
+			entity.Hocky = this;
+		}
+		
+		private void detach_SuKiens(SuKien entity)
+		{
+			this.SendPropertyChanging();
+			entity.Hocky = null;
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.SinhVien")]
@@ -349,7 +292,11 @@ namespace BaiOn3
 		
 		private string _SinhvienTen;
 		
+		private System.Nullable<bool> _SinhvienGioitinh;
+		
 		private System.Nullable<System.DateTime> _SinhvienNgaySinh;
+		
+		private string _SinhvienSDT;
 		
 		private string _SinhvienEmail;
 		
@@ -371,8 +318,12 @@ namespace BaiOn3
     partial void OnSinhvienHoChanged();
     partial void OnSinhvienTenChanging(string value);
     partial void OnSinhvienTenChanged();
+    partial void OnSinhvienGioitinhChanging(System.Nullable<bool> value);
+    partial void OnSinhvienGioitinhChanged();
     partial void OnSinhvienNgaySinhChanging(System.Nullable<System.DateTime> value);
     partial void OnSinhvienNgaySinhChanged();
+    partial void OnSinhvienSDTChanging(string value);
+    partial void OnSinhvienSDTChanged();
     partial void OnSinhvienEmailChanging(string value);
     partial void OnSinhvienEmailChanged();
     partial void OnSinhvienStatusChanging(System.Nullable<int> value);
@@ -467,6 +418,26 @@ namespace BaiOn3
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SinhvienGioitinh", DbType="Bit")]
+		public System.Nullable<bool> SinhvienGioitinh
+		{
+			get
+			{
+				return this._SinhvienGioitinh;
+			}
+			set
+			{
+				if ((this._SinhvienGioitinh != value))
+				{
+					this.OnSinhvienGioitinhChanging(value);
+					this.SendPropertyChanging();
+					this._SinhvienGioitinh = value;
+					this.SendPropertyChanged("SinhvienGioitinh");
+					this.OnSinhvienGioitinhChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SinhvienNgaySinh", DbType="Date")]
 		public System.Nullable<System.DateTime> SinhvienNgaySinh
 		{
@@ -483,6 +454,26 @@ namespace BaiOn3
 					this._SinhvienNgaySinh = value;
 					this.SendPropertyChanged("SinhvienNgaySinh");
 					this.OnSinhvienNgaySinhChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SinhvienSDT", DbType="VarChar(13)")]
+		public string SinhvienSDT
+		{
+			get
+			{
+				return this._SinhvienSDT;
+			}
+			set
+			{
+				if ((this._SinhvienSDT != value))
+				{
+					this.OnSinhvienSDTChanging(value);
+					this.SendPropertyChanging();
+					this._SinhvienSDT = value;
+					this.SendPropertyChanged("SinhvienSDT");
+					this.OnSinhvienSDTChanged();
 				}
 			}
 		}
@@ -765,6 +756,274 @@ namespace BaiOn3
 		{
 			this.SendPropertyChanging();
 			entity.Lop = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.SinhVienSuKien")]
+	public partial class SinhVienSuKien
+	{
+		
+		private System.Nullable<int> _SinhvienID;
+		
+		private System.Nullable<int> _SukienID;
+		
+		public SinhVienSuKien()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SinhvienID", DbType="Int")]
+		public System.Nullable<int> SinhvienID
+		{
+			get
+			{
+				return this._SinhvienID;
+			}
+			set
+			{
+				if ((this._SinhvienID != value))
+				{
+					this._SinhvienID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SukienID", DbType="Int")]
+		public System.Nullable<int> SukienID
+		{
+			get
+			{
+				return this._SukienID;
+			}
+			set
+			{
+				if ((this._SukienID != value))
+				{
+					this._SukienID = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.SuKien")]
+	public partial class SuKien : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _SukienID;
+		
+		private string _SukienTen;
+		
+		private System.Nullable<int> _HockyID;
+		
+		private System.Nullable<System.DateTime> _SukienTimeStart;
+		
+		private System.Nullable<System.DateTime> _SukienTimeEnd;
+		
+		private string _SukienDiadiem;
+		
+		private EntityRef<Hocky> _Hocky;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnSukienIDChanging(int value);
+    partial void OnSukienIDChanged();
+    partial void OnSukienTenChanging(string value);
+    partial void OnSukienTenChanged();
+    partial void OnHockyIDChanging(System.Nullable<int> value);
+    partial void OnHockyIDChanged();
+    partial void OnSukienTimeStartChanging(System.Nullable<System.DateTime> value);
+    partial void OnSukienTimeStartChanged();
+    partial void OnSukienTimeEndChanging(System.Nullable<System.DateTime> value);
+    partial void OnSukienTimeEndChanged();
+    partial void OnSukienDiadiemChanging(string value);
+    partial void OnSukienDiadiemChanged();
+    #endregion
+		
+		public SuKien()
+		{
+			this._Hocky = default(EntityRef<Hocky>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SukienID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int SukienID
+		{
+			get
+			{
+				return this._SukienID;
+			}
+			set
+			{
+				if ((this._SukienID != value))
+				{
+					this.OnSukienIDChanging(value);
+					this.SendPropertyChanging();
+					this._SukienID = value;
+					this.SendPropertyChanged("SukienID");
+					this.OnSukienIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SukienTen", DbType="NVarChar(500)")]
+		public string SukienTen
+		{
+			get
+			{
+				return this._SukienTen;
+			}
+			set
+			{
+				if ((this._SukienTen != value))
+				{
+					this.OnSukienTenChanging(value);
+					this.SendPropertyChanging();
+					this._SukienTen = value;
+					this.SendPropertyChanged("SukienTen");
+					this.OnSukienTenChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HockyID", DbType="Int")]
+		public System.Nullable<int> HockyID
+		{
+			get
+			{
+				return this._HockyID;
+			}
+			set
+			{
+				if ((this._HockyID != value))
+				{
+					if (this._Hocky.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnHockyIDChanging(value);
+					this.SendPropertyChanging();
+					this._HockyID = value;
+					this.SendPropertyChanged("HockyID");
+					this.OnHockyIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SukienTimeStart", DbType="DateTime")]
+		public System.Nullable<System.DateTime> SukienTimeStart
+		{
+			get
+			{
+				return this._SukienTimeStart;
+			}
+			set
+			{
+				if ((this._SukienTimeStart != value))
+				{
+					this.OnSukienTimeStartChanging(value);
+					this.SendPropertyChanging();
+					this._SukienTimeStart = value;
+					this.SendPropertyChanged("SukienTimeStart");
+					this.OnSukienTimeStartChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SukienTimeEnd", DbType="DateTime")]
+		public System.Nullable<System.DateTime> SukienTimeEnd
+		{
+			get
+			{
+				return this._SukienTimeEnd;
+			}
+			set
+			{
+				if ((this._SukienTimeEnd != value))
+				{
+					this.OnSukienTimeEndChanging(value);
+					this.SendPropertyChanging();
+					this._SukienTimeEnd = value;
+					this.SendPropertyChanged("SukienTimeEnd");
+					this.OnSukienTimeEndChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SukienDiadiem", DbType="NVarChar(500)")]
+		public string SukienDiadiem
+		{
+			get
+			{
+				return this._SukienDiadiem;
+			}
+			set
+			{
+				if ((this._SukienDiadiem != value))
+				{
+					this.OnSukienDiadiemChanging(value);
+					this.SendPropertyChanging();
+					this._SukienDiadiem = value;
+					this.SendPropertyChanged("SukienDiadiem");
+					this.OnSukienDiadiemChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Hocky_SuKien", Storage="_Hocky", ThisKey="HockyID", OtherKey="HockyID", IsForeignKey=true)]
+		public Hocky Hocky
+		{
+			get
+			{
+				return this._Hocky.Entity;
+			}
+			set
+			{
+				Hocky previousValue = this._Hocky.Entity;
+				if (((previousValue != value) 
+							|| (this._Hocky.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Hocky.Entity = null;
+						previousValue.SuKiens.Remove(this);
+					}
+					this._Hocky.Entity = value;
+					if ((value != null))
+					{
+						value.SuKiens.Add(this);
+						this._HockyID = value.HockyID;
+					}
+					else
+					{
+						this._HockyID = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("Hocky");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
 		}
 	}
 }

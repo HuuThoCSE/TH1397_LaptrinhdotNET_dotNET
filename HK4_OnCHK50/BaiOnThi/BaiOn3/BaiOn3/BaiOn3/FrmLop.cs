@@ -17,6 +17,7 @@ namespace BaiOn3
             InitializeComponent();
         }
 
+
         DataQuanLyClassDataContext db;
 
         private void loadData()
@@ -35,6 +36,14 @@ namespace BaiOn3
 
         }
 
-        
+        private void dgvLop_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void dgvLop_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+
+        }
     }
 }

@@ -11,3 +11,5 @@ D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3
 D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3\obj\Debug\BaiOn3.pdb
 D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3\obj\Debug\BaiOn3.FrmLop.resources
 D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3\obj\Debug\BaiOn3.FrmSinhVien.resources
+D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3\obj\Debug\BaiOn3.FrmSuKien.resources
+D:\GitHub\TH1397_LaptrinhdotNET_dotNET\HK4_OnCHK50\BaiOnThi\BaiOn3\BaiOn3\BaiOn3\obj\Debug\BaiOn3.FrmSukienJoin.resources

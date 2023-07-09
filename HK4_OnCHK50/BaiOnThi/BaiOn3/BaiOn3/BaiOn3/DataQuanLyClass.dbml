@@ -1,21 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QuanLyLop" Class="DataQuanLyClassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-TKLNL00;Initial Catalog=QuanLyLop;Integrated Security=True" SettingsObjectName="BaiOn3.Properties.Settings" SettingsPropertyName="QuanLyLopConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.ThamGia" Member="ThamGias">
-    <Type Name="ThamGia">
-      <Column Name="SinhvienID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="SukienID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="SuKien_ThamGia" Member="SuKien" ThisKey="SukienID" OtherKey="SukienID" Type="SuKien" IsForeignKey="true" />
-      <Association Name="SinhVien_ThamGia" Member="SinhVien" ThisKey="SinhvienID" OtherKey="SinhvienID" Type="SinhVien" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.SuKien" Member="SuKiens">
-    <Type Name="SuKien">
-      <Column Name="SukienID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="SukienTen" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
-      <Column Name="SukienTimeStart" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="SukienTimeEnd" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="SukienDiadiem" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
-      <Association Name="SuKien_ThamGia" Member="ThamGias" ThisKey="SukienID" OtherKey="SukienID" Type="ThamGia" />
+  <Table Name="dbo.Hocky" Member="Hockies">
+    <Type Name="Hocky">
+      <Column Name="HockyID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HockyMa" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Association Name="Hocky_SuKien" Member="SuKiens" ThisKey="HockyID" OtherKey="HockyID" Type="SuKien" />
     </Type>
   </Table>
   <Table Name="dbo.SinhVien" Member="SinhViens">
@@ -24,11 +13,13 @@
       <Column Name="MSSV" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
       <Column Name="SinhvienHo" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
       <Column Name="SinhvienTen" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SinhvienGioitinh" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="SinhvienNgaySinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="SinhvienSDT" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
       <Column Name="SinhvienEmail" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
       <Column Name="SinhvienStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="LopID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="SinhVien_ThamGia" Member="ThamGias" ThisKey="SinhvienID" OtherKey="SinhvienID" Type="ThamGia" />
+      <Association Name="SinhVien_SinhVienSuKien" Member="SinhVienSuKiens" ThisKey="SinhvienID" OtherKey="SinhvienID" Type="SinhVienSuKien" />
       <Association Name="Lop_SinhVien" Member="Lop" ThisKey="LopID" OtherKey="LopID" Type="Lop" IsForeignKey="true" />
     </Type>
   </Table>
@@ -41,6 +32,31 @@
       <Association Name="Lop_SinhVien" Member="SinhViens" ThisKey="LopID" OtherKey="LopID" Type="SinhVien" />
     </Type>
   </Table>
+  <Table Name="dbo.SinhVienSuKien" Member="SinhVienSuKiens">
+    <Type Name="SinhVienSuKien">
+      <Column Name="SinhvienID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SukienID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="SinhVien_SinhVienSuKien" Member="SinhVien" ThisKey="SinhvienID" OtherKey="SinhvienID" Type="SinhVien" IsForeignKey="true" />
+      <Association Name="SuKien_SinhVienSuKien" Member="SuKien" ThisKey="SukienID" OtherKey="SukienID" Type="SuKien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SuKien" Member="SuKiens">
+    <Type Name="SuKien">
+      <Column Name="SukienID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SukienTen" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="HockyID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SukienTimeStart" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SukienTimeEnd" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SukienDiadiem" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Association Name="SuKien_SinhVienSuKien" Member="SinhVienSuKiens" ThisKey="SukienID" OtherKey="SukienID" Type="SinhVienSuKien" />
+      <Association Name="Hocky_SuKien" Member="Hocky" ThisKey="HockyID" OtherKey="HockyID" Type="Hocky" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.joinSukien" Method="joinSukien">
+    <Parameter Name="SinhvienID" Parameter="sinhvienID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SukienID" Parameter="sukienID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
   <Function Name="dbo.suaLop" Method="suaLop">
     <Parameter Name="LopID" Parameter="lopID" Type="System.Int32" DbType="Int" />
     <Parameter Name="LopMa" Parameter="lopMa" Type="System.String" DbType="VarChar(8)" />
@@ -53,10 +69,20 @@
     <Parameter Name="MSSV" Parameter="mSSV" Type="System.String" DbType="VarChar(8)" />
     <Parameter Name="SinhvienHo" Parameter="sinhvienHo" Type="System.String" DbType="NVarChar(100)" />
     <Parameter Name="SinhvienTen" Parameter="sinhvienTen" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="SinhvienGioitinh" Parameter="sinhvienGioitinh" Type="System.Boolean" DbType="Bit" />
     <Parameter Name="SinhvienNgaySinh" Parameter="sinhvienNgaySinh" Type="System.DateTime" DbType="Date" />
     <Parameter Name="SinhvienSDT" Parameter="sinhvienSDT" Type="System.String" DbType="VarChar(13)" />
     <Parameter Name="SinhvienEmail" Parameter="sinhvienEmail" Type="System.String" DbType="NVarChar(500)" />
     <Parameter Name="LopID" Parameter="lopID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.suaSuKien" Method="suaSuKien">
+    <Parameter Name="SukienID" Parameter="sukienID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SukienTen" Parameter="sukienTen" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="HockyID" Parameter="hockyID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SukienTimeStart" Parameter="sukienTimeStart" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="SukienTimeEnd" Parameter="sukienTimeEnd" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="SukienDiadiem" Parameter="sukienDiadiem" Type="System.String" DbType="NVarChar(500)" />
     <Return Type="System.Int32" />
   </Function>
   <Function Name="dbo.themLop" Method="themLop">
@@ -69,10 +95,19 @@
     <Parameter Name="MSSV" Parameter="mSSV" Type="System.String" DbType="VarChar(8)" />
     <Parameter Name="SinhvienHo" Parameter="sinhvienHo" Type="System.String" DbType="NVarChar(100)" />
     <Parameter Name="SinhvienTen" Parameter="sinhvienTen" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="SinhvienGioitinh" Parameter="sinhvienGioitinh" Type="System.Boolean" DbType="Bit" />
     <Parameter Name="SinhvienNgaySinh" Parameter="sinhvienNgaySinh" Type="System.DateTime" DbType="Date" />
     <Parameter Name="SinhvienSDT" Parameter="sinhvienSDT" Type="System.String" DbType="VarChar(13)" />
     <Parameter Name="SinhvienEmail" Parameter="sinhvienEmail" Type="System.String" DbType="NVarChar(500)" />
     <Parameter Name="LopID" Parameter="lopID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.themSuKien" Method="themSuKien">
+    <Parameter Name="SukienTen" Parameter="sukienTen" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="HockyID" Parameter="hockyID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SukienTimeStart" Parameter="sukienTimeStart" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="SukienTimeEnd" Parameter="sukienTimeEnd" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="SukienDiadiem" Parameter="sukienDiadiem" Type="System.String" DbType="NVarChar(500)" />
     <Return Type="System.Int32" />
   </Function>
 </Database>

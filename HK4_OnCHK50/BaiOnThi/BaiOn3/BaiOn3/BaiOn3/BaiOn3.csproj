@@ -76,6 +76,12 @@
     <Compile Include="FrmSuKien.Designer.cs">
       <DependentUpon>FrmSuKien.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSukienJoin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSukienJoin.Designer.cs">
+      <DependentUpon>FrmSukienJoin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmLop.resx">
@@ -86,6 +92,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSinhVien.resx">
       <DependentUpon>FrmSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSuKien.resx">
+      <DependentUpon>FrmSuKien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSukienJoin.resx">
+      <DependentUpon>FrmSukienJoin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -24,7 +24,25 @@ namespace BaiOn3
         private void loadData()
         {
             db = new DataQuanLyClassDataContext();
-            dgvSinhvien.DataSource = db.SinhViens;
+            //dgvSinhvien.DataSource = db.SinhViens;
+
+            var dl = from sv in db.SinhViens
+                     from l in db.Lops
+                     where sv.LopID == l.LopID
+                     select new
+                     {
+                         sv.SinhvienID,
+                         sv.MSSV,
+                         sv.SinhvienHo,
+                         sv.SinhvienTen,
+                         sv.SinhvienGioitinh,
+                         sv.SinhvienNgaySinh,
+                         sv.SinhvienStatus,
+                         l.LopMa,
+                         l.LopTen
+                     };
+            dgvSinhvien.DataSource = dl;
+
         }
 
         private void FrmSinhVien_Load(object sender, EventArgs e)
@@ -35,7 +53,7 @@ namespace BaiOn3
         private void btnThem_Click(object sender, EventArgs e)
         {
             // Loại bỏ khoản trắng thừa
-            string hoten = txtHoten.Text;
+            string hoten = txtTen.Text;
             hoten = string.Join(" ", hoten.Split(new char[] { ' ' },
                 StringSplitOptions.RemoveEmptyEntries));
 
@@ -51,6 +69,69 @@ namespace BaiOn3
                             , "..."); 
 
             
+        }
+
+        private void tbnSua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvSinhvien_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SinhvienID = (int)dgvSinhvien.CurrentRow.Cells["colSinhvienID"].Value;
+            txtHo.Text = dgvSinhvien.CurrentRow.Cells["colSinhvienHo"].Value.ToString();
+            txtTen.Text = dgvSinhvien.CurrentRow.Cells["colSinhvienTen"].Value.ToString();
+            txtMSSV.Text = dgvSinhvien.CurrentRow.Cells["colMSSV"].Value.ToString();
+            dtpNgaysinh.Value = ((DateTime)dgvSinhvien.CurrentRow.Cells["colSinhvienNgaysinh"].Value).Date;
+
+        }
+
+        private void dgvSinhvien_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
+        {
+            dgvSinhvien.Rows[e.RowIndex].Cells["colSTT"].Value = e.RowIndex + 1;
+        }
+
+        private void dgvSinhvien_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (dgvSinhvien.Columns[e.ColumnIndex].Name == "colSinhvienGioitinh")
+            {
+                if (e.Value != null)
+                {
+                    bool gioitinh = (bool)e.Value;
+                    e.Value = gioitinh ? "Nam" : "Nữ";
+                    e.FormattingApplied = true;
+                }
+            }
+
+            if (dgvSinhvien.Columns[e.ColumnIndex].Name == "colSinhvienStatus")
+                if (e.Value != null)
+                {
+                    int type = (int)e.Value;
+                    switch (type)
+                    {
+                        case 0:
+                            e.Value = "Nghỉ học";
+                            break;
+                        case 1:
+                            e.Value = "Còn học";
+                            break;
+                        case 2:
+                            e.Value = "Chuyển ngành";
+                            break;
+                        default:
+                            e.Value = "Ngoại lệ";
+                            break;
+                    }
+                    e.FormattingApplied = true;
+                }
+            
+            if (dgvSinhvien.Columns[e.ColumnIndex].Name == "colSinhvienNgaysinh")
+                if(e.Value != null)
+                {
+                    DateTime date = (DateTime)e.Value;
+                    e.Value = date.ToString("dd/MM/yyyy");
+                    e.FormattingApplied = true;
+                }
         }
     }
 }

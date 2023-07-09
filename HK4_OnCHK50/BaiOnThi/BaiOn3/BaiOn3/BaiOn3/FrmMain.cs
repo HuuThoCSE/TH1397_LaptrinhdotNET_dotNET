@@ -37,5 +37,17 @@ namespace BaiOn3
             frmSuKien.MdiParent = this;
             frmSuKien.Show();
         }
+
+        private void mnuSukienJoin_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void mnuJoinSukien_Click(object sender, EventArgs e)
+        {
+            FrmSukienJoin frmSukienJoin = new FrmSukienJoin();
+            frmSukienJoin.MdiParent = this;
+            frmSukienJoin.Show();
+        }
     }
 }
