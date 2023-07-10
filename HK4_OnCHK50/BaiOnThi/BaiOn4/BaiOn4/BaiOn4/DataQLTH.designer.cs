@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BaiOn3
+namespace BaiOn4
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -23,7 +23,7 @@ namespace BaiOn3
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="QuanLyLop")]
-	public partial class DataQuanLyClassDataContext : System.Data.Linq.DataContext
+	public partial class DataQLTHDataContext : System.Data.Linq.DataContext
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
@@ -44,31 +44,31 @@ namespace BaiOn3
     partial void DeleteSuKien(SuKien instance);
     #endregion
 		
-		public DataQuanLyClassDataContext() : 
-				base(global::BaiOn3.Properties.Settings.Default.QuanLyLopConnectionString, mappingSource)
+		public DataQLTHDataContext() : 
+				base(global::BaiOn4.Properties.Settings.Default.QuanLyLopConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataQuanLyClassDataContext(string connection) : 
+		public DataQLTHDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataQuanLyClassDataContext(System.Data.IDbConnection connection) : 
+		public DataQLTHDataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataQuanLyClassDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public DataQLTHDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataQuanLyClassDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public DataQLTHDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
@@ -121,13 +121,6 @@ namespace BaiOn3
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.suaSuKien")]
-		public int suaSuKien([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienID", DbType="Int")] System.Nullable<int> sukienID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienTen", DbType="NVarChar(500)")] string sukienTen, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="HockyID", DbType="Int")] System.Nullable<int> hockyID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienTimeStart", DbType="DateTime")] System.Nullable<System.DateTime> sukienTimeStart, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienTimeEnd", DbType="DateTime")] System.Nullable<System.DateTime> sukienTimeEnd, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienDiadiem", DbType="NVarChar(500)")] string sukienDiadiem)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sukienID, sukienTen, hockyID, sukienTimeStart, sukienTimeEnd, sukienDiadiem);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.suaSinhVien")]
 		public int suaSinhVien([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienID", DbType="Int")] System.Nullable<int> sinhvienID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="MSSV", DbType="VarChar(8)")] string mSSV, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienHo", DbType="NVarChar(100)")] string sinhvienHo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienTen", DbType="NVarChar(100)")] string sinhvienTen, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienGioitinh", DbType="Bit")] System.Nullable<bool> sinhvienGioitinh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienNgaySinh", DbType="Date")] System.Nullable<System.DateTime> sinhvienNgaySinh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienSDT", DbType="VarChar(13)")] string sinhvienSDT, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienEmail", DbType="NVarChar(500)")] string sinhvienEmail, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="LopID", DbType="Int")] System.Nullable<int> lopID)
 		{
@@ -142,6 +135,13 @@ namespace BaiOn3
 			return ((int)(result.ReturnValue));
 		}
 		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.suaSuKien")]
+		public int suaSuKien([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienID", DbType="Int")] System.Nullable<int> sukienID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienTen", DbType="NVarChar(500)")] string sukienTen, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="HockyID", DbType="Int")] System.Nullable<int> hockyID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienTimeStart", DbType="DateTime")] System.Nullable<System.DateTime> sukienTimeStart, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienTimeEnd", DbType="DateTime")] System.Nullable<System.DateTime> sukienTimeEnd, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienDiadiem", DbType="NVarChar(500)")] string sukienDiadiem)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sukienID, sukienTen, hockyID, sukienTimeStart, sukienTimeEnd, sukienDiadiem);
+			return ((int)(result.ReturnValue));
+		}
+		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.themLop")]
 		public int themLop([global::System.Data.Linq.Mapping.ParameterAttribute(Name="LopMa", DbType="VarChar(8)")] string lopMa, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="LopTen", DbType="NVarChar(200)")] string lopTen, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SoSinhVien", DbType="Int")] System.Nullable<int> soSinhVien)
 		{
@@ -149,17 +149,17 @@ namespace BaiOn3
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.themSinhvien")]
-		public int themSinhvien([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MSSV", DbType="VarChar(8)")] string mSSV, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienHo", DbType="NVarChar(100)")] string sinhvienHo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienTen", DbType="NVarChar(100)")] string sinhvienTen, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienGioitinh", DbType="Bit")] System.Nullable<bool> sinhvienGioitinh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienNgaySinh", DbType="Date")] System.Nullable<System.DateTime> sinhvienNgaySinh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienSDT", DbType="VarChar(13)")] string sinhvienSDT, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienEmail", DbType="NVarChar(500)")] string sinhvienEmail, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="LopID", DbType="Int")] System.Nullable<int> lopID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), mSSV, sinhvienHo, sinhvienTen, sinhvienGioitinh, sinhvienNgaySinh, sinhvienSDT, sinhvienEmail, lopID);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.themSuKien")]
 		public int themSuKien([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienTen", DbType="NVarChar(500)")] string sukienTen, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="HockyID", DbType="Int")] System.Nullable<int> hockyID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienTimeStart", DbType="DateTime")] System.Nullable<System.DateTime> sukienTimeStart, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienTimeEnd", DbType="DateTime")] System.Nullable<System.DateTime> sukienTimeEnd, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SukienDiadiem", DbType="NVarChar(500)")] string sukienDiadiem)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sukienTen, hockyID, sukienTimeStart, sukienTimeEnd, sukienDiadiem);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.themSinhvien")]
+		public int themSinhvien([global::System.Data.Linq.Mapping.ParameterAttribute(Name="MSSV", DbType="VarChar(8)")] string mSSV, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienHo", DbType="NVarChar(100)")] string sinhvienHo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienTen", DbType="NVarChar(100)")] string sinhvienTen, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienGioitinh", DbType="Bit")] System.Nullable<bool> sinhvienGioitinh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienNgaySinh", DbType="Date")] System.Nullable<System.DateTime> sinhvienNgaySinh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienSDT", DbType="VarChar(13)")] string sinhvienSDT, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SinhvienEmail", DbType="NVarChar(500)")] string sinhvienEmail, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="LopID", DbType="Int")] System.Nullable<int> lopID)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), mSSV, sinhvienHo, sinhvienTen, sinhvienGioitinh, sinhvienNgaySinh, sinhvienSDT, sinhvienEmail, lopID);
 			return ((int)(result.ReturnValue));
 		}
 	}

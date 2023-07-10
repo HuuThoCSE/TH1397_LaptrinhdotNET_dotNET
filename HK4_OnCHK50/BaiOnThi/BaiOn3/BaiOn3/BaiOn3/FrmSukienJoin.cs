@@ -22,6 +22,20 @@ namespace BaiOn3
         private void FrmSukienJoin_Load(object sender, EventArgs e)
         {
             db = new DataQuanLyClassDataContext();
+            dgvDiemdanh.DataSource = db.DiemDanhs;
+
+            var dl = from sv in db.SinhViens
+                     from sk in db.SuKiens
+                     from dd in db.DiemDanhs
+                     where dd.SinhvienID == sv.SinhvienID && dd.SukienID == sk.SukienID
+                     select new
+                     {
+                         sv.SinhvienID,
+                         sv.SinhvienTen,
+                         sk.SukienID,
+                         sk.SukienTen,
+                     };
+
             cbLop.DataSource = db.Lops;
             cbLop.DisplayMember = "LopTen";
             cbLop.ValueMember = "LopID";
@@ -33,6 +47,15 @@ namespace BaiOn3
             cbSukien.DataSource = db.SuKiens;
             cbSukien.DisplayMember = "SukienTen";
             cbSukien.ValueMember = "SukienID";
+
+
+        }
+
+        private void btnDiemdanh_Click(object sender, EventArgs e)
+        {
+            db = new DataQuanLyClassDataContext();
+            db.themDiemDanh((int)cbSinhvien.SelectedValue, (int)cbSukien.SelectedValue);
+          
         }
     }
 }

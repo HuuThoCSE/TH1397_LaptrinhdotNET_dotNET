@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QuanLyLop" Class="DataQuanLyClassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-TKLNL00;Initial Catalog=QuanLyLop;Integrated Security=True" SettingsObjectName="BaiOn3.Properties.Settings" SettingsPropertyName="QuanLyLopConnectionString" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QuanLyLop" Class="DataQLTHDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-TKLNL00;Initial Catalog=QuanLyLop;Integrated Security=True" SettingsObjectName="BaiOn4.Properties.Settings" SettingsPropertyName="QuanLyLopConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.DiemDanh" Member="DiemDanhs">
     <Type Name="DiemDanh">
       <Column Name="SinhvienID" Type="System.Int32" DbType="Int" CanBeNull="true" />
@@ -60,15 +60,6 @@
     <Parameter Name="SoSinhVien" Parameter="soSinhVien" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.suaSuKien" Method="suaSuKien">
-    <Parameter Name="SukienID" Parameter="sukienID" Type="System.Int32" DbType="Int" />
-    <Parameter Name="SukienTen" Parameter="sukienTen" Type="System.String" DbType="NVarChar(500)" />
-    <Parameter Name="HockyID" Parameter="hockyID" Type="System.Int32" DbType="Int" />
-    <Parameter Name="SukienTimeStart" Parameter="sukienTimeStart" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="SukienTimeEnd" Parameter="sukienTimeEnd" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="SukienDiadiem" Parameter="sukienDiadiem" Type="System.String" DbType="NVarChar(500)" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.suaSinhVien" Method="suaSinhVien">
     <Parameter Name="SinhvienID" Parameter="sinhvienID" Type="System.Int32" DbType="Int" />
     <Parameter Name="MSSV" Parameter="mSSV" Type="System.String" DbType="VarChar(8)" />
@@ -86,10 +77,27 @@
     <Parameter Name="SukienID" Parameter="sukienID" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.suaSuKien" Method="suaSuKien">
+    <Parameter Name="SukienID" Parameter="sukienID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SukienTen" Parameter="sukienTen" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="HockyID" Parameter="hockyID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SukienTimeStart" Parameter="sukienTimeStart" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="SukienTimeEnd" Parameter="sukienTimeEnd" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="SukienDiadiem" Parameter="sukienDiadiem" Type="System.String" DbType="NVarChar(500)" />
+    <Return Type="System.Int32" />
+  </Function>
   <Function Name="dbo.themLop" Method="themLop">
     <Parameter Name="LopMa" Parameter="lopMa" Type="System.String" DbType="VarChar(8)" />
     <Parameter Name="LopTen" Parameter="lopTen" Type="System.String" DbType="NVarChar(200)" />
     <Parameter Name="SoSinhVien" Parameter="soSinhVien" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.themSuKien" Method="themSuKien">
+    <Parameter Name="SukienTen" Parameter="sukienTen" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="HockyID" Parameter="hockyID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SukienTimeStart" Parameter="sukienTimeStart" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="SukienTimeEnd" Parameter="sukienTimeEnd" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="SukienDiadiem" Parameter="sukienDiadiem" Type="System.String" DbType="NVarChar(500)" />
     <Return Type="System.Int32" />
   </Function>
   <Function Name="dbo.themSinhvien" Method="themSinhvien">
@@ -101,14 +109,6 @@
     <Parameter Name="SinhvienSDT" Parameter="sinhvienSDT" Type="System.String" DbType="VarChar(13)" />
     <Parameter Name="SinhvienEmail" Parameter="sinhvienEmail" Type="System.String" DbType="NVarChar(500)" />
     <Parameter Name="LopID" Parameter="lopID" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.themSuKien" Method="themSuKien">
-    <Parameter Name="SukienTen" Parameter="sukienTen" Type="System.String" DbType="NVarChar(500)" />
-    <Parameter Name="HockyID" Parameter="hockyID" Type="System.Int32" DbType="Int" />
-    <Parameter Name="SukienTimeStart" Parameter="sukienTimeStart" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="SukienTimeEnd" Parameter="sukienTimeEnd" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="SukienDiadiem" Parameter="sukienDiadiem" Type="System.String" DbType="NVarChar(500)" />
     <Return Type="System.Int32" />
   </Function>
 </Database>

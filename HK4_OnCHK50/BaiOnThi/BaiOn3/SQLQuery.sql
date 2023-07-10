@@ -52,9 +52,10 @@ create table SuKien(
 )
 go
 
-create table SinhVienSuKien(
+create table DiemDanh(
 	SinhvienID int foreign key references SinhVien(SinhvienID),
-	SukienID int foreign key references SuKien(SukienID)
+	SukienID int foreign key references SuKien(SukienID),
+	SukienStatus bit DEFAULT 1
 )
 go
 
@@ -166,6 +167,9 @@ as
 		values (@SukienTen, @HockyID, @SukienTimeStart, @SukienTimeEnd, @SukienDiadiem)
 go
 
+exec themSuKien N'Chào cờ tháng 7', 1, '7:00 am 07/03/2023', '7:00 am 07/03/2023', N'Sân cột cờ'
+go
+
 create proc suaSuKien(
 	@SukienID int,
 	@SukienTen nvarchar(500),
@@ -185,10 +189,13 @@ as
 	SukienID = @SukienID
 go
 
-create proc joinSukien(
+create proc themDiemDanh(
 	@SinhvienID int,
 	@SukienID int
 )
 as
-	insert into SinhVienSuKien values (@SinhvienID, @SukienID)
+	insert into DiemDanh (SinhvienID, SukienID) values (@SinhvienID, @SukienID)
+go
+
+exec themDiemDanh 8, 1
 go

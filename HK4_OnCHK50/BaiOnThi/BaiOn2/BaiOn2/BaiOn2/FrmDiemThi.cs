@@ -69,7 +69,10 @@ namespace BaiOn2
         private void btnSua_Click(object sender, EventArgs e)
         {
             db = new DataQLKTDataContext();
-            db.suaDT(DiemthiID, (int)cbSinhvien.SelectedValue, (int)cbMonhoc.SelectedValue, double.Parse(txtDiem.Text));
+            db.suaDT(DiemthiID, 
+                (int)cbSinhvien.SelectedValue, 
+                (int)cbMonhoc.SelectedValue, 
+                double.Parse(txtDiem.Text));
             loadData();
         }
 
@@ -103,7 +106,14 @@ namespace BaiOn2
                      where dt.SinhvienID == sv.SinhvienID && dt.MonhocID == mh.MonhocID
                      where sv.SinhvienID == (int)cbSinhvien.SelectedValue
                      where mh.MonhocID == (int)cbMonhoc.SelectedValue
-                     select new { sv.SinhvienID, sv.HoTen, dt.MonhocID, mh.MonhocTen, dt.DiemthiID, dt.Diem };
+                     select new { 
+                         sv.SinhvienID, 
+                         sv.HoTen, 
+                         dt.MonhocID, 
+                         mh.MonhocTen, 
+                         dt.DiemthiID, 
+                         dt.Diem 
+                     };
             dgvDiemthi.DataSource = dl;
         }
     }
